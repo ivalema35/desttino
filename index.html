@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore more with Desttino. Book affordable flights with confidence. Secure booking, no hidden fees, and 24/7 customer support.">
+    <meta name="keywords"
+        content="flight booking, airline reservations, cheap flights, travel deals, flight search, Desttino">
+    <meta name="author" content="Desttino">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Desttino - Explore More With Desttino">
+    <meta property="og:description"
+        content="Find and book affordable flights with our easy-to-use search. Secure payments, no hidden fees, 24/7 support.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="attached_assets/logo (1)_1764409813289.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Desttino - Explore More With Desttino">
+    <meta name="twitter:description" content="Find and book affordable flights with our easy-to-use search.">
+    <title>Desttino - Explore More With Desttino | Book Affordable Flights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="Desttino Home">
+                <img src="attached_assets/logo (1)_1764409813289.jpg" alt="Desttino Logo" class="logo-img">
+            </a>
+            <div class="header-right">
+                <div class="support-info">
+                    <span class="support-text">24/7 Support Available</span>
+                    <a href="tel:+18007805923" class="phone-link">
+                        <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        1800-780-5923
+                    </a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="mobile-nav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <ul class="mobile-nav-list">
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#name-change">Name Changes</a></li>
+                <li><a href="#cancellations">Cancellations</a></li>
+                <li><a href="#popular-flights">Popular Flights</a></li>
+                <li><a href="tel:+18007805923" class="mobile-call-btn">Call Now: 1800-780-5923</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* MAIN FLEX LAYOUT */
+        .flight-hero-section {
+            padding: 50px 20px;
+            background: #f4f7fb;
+        }
+
+        .flight-flex {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* LEFT SIDE */
+        .flight-left {
+            flex: 1;
+        }
+
+        .hero-main-title {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        /* .hero-call-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 22px;
+            background: #007bff;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 15px 0;
+            position: relative;
+        } */
+
+        .pulse-circle {
+            width: 16px;
+            height: 16px;
+            background: #9f2525;
+            border-radius: 50%;
+            opacity: 0.4;
+            animation: pulse-call 1.4s infinite;
+        }
+
+        @keyframes pulse-call {
+            0% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .h-feature {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            background: #fff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* RIGHT SIDE FORM */
+        .flight-right {
+            flex: 1;
+            /* background: #fff; */
+            /* padding: 25px; */
+            /* border-radius: 12px; */
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); */
+        }
+
+        .flight-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Trip Toggle Buttons */
+        .trip-type-toggles {
+            display: flex;
+            gap: 10px;
+        }
+
+        .trip-toggle {
+            padding: 10px 16px;
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: .3s;
+            font-weight: 600;
+        }
+
+        .trip-toggle.active {
+            background: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+
+        /* Form Row */
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Form Fields */
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        /* Swap Button */
+        .swap-btn {
+            width: 45px;
+            height: 45px;
+            background: #eee;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            align-self: end;
+            font-size: 20px;
+        }
+
+        /* Submit Button */
+        .form-submit-btn {
+            padding: 14px;
+            background: #ff5722;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .form-submit-btn:hover {
+            background: #e64a19;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 992px) {
+            .flight-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .form-row {
+                flex-direction: column;
+            }
+
+            .swap-btn {
+                margin: auto;
+            }
+        }
+    </style>
+
+    <!-- Hero Section with Search -->
+    <section class="hero" role="region" aria-label="Flight search">
+        <div class="hero-bg"></div>
+
+        <div class="flight-flex">
+
+            <!-- LEFT SIDE CONTENT -->
+            <div class="flight-left">
+                
+                <!-- CALL BOX -->
+                <div class="hero-call-wrapper">
+                    <a href="tel:+18007805923" class="hero-call-box" style="    background: #ffffff;
+                        padding: 14px 30px;
+                        border-radius: 14px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        position: relative;
+                        overflow: hidden;
+                        color: black;
+                        margin-top: 14px;
+                        box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);">
+                        <div class="pulse-circle"></div>
+                        <span class="hero-call-number"><i class="fa fa-phone"></i> 1800-780-5923</span>
+                    </a>
+                </div>
+
+                <p class="no-wait-text" style="color:white;margin: 13px;">⚡ On First Call – Get Up To 20% OFF Instantly
+                </p>
+
+                <!-- TRUST / FEATURES -->
+                <div class="hero-features">
+                    <div class="h-feature"><i class="fa-solid fa-plane-up"></i><span>New Booking</span></div>
+                    <div class="h-feature"><i class="fa-solid fa-repeat"></i><span>Flight Change</span></div>
+                    <div class="h-feature"><i class="fa-solid fa-xmark-circle"></i><span>Cancellation</span></div>
+                    <div class="h-feature"><i class="fa-solid fa-suitcase-rolling"></i><span>Baggage Help</span></div>
+                </div>
+            </div>
+            <div class="container flight-right hero-content">
+
+                <!-- Flight Search Form - Redesigned -->
+                <form class="search-form" id="search-form" aria-label="Flight search form">
+                    <!-- Trip Type Toggles -->
+                    <div class="trip-type-toggles" role="group" aria-label="Trip type selection">
+                        <button type="button" class="trip-toggle active" data-trip="round-trip" aria-pressed="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 2l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 22l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3" />
+                            </svg>
+                            Round-trip
+                        </button>
+                        <button type="button" class="trip-toggle" data-trip="one-way" aria-pressed="false">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                            One-way
+                        </button>
+                        <button type="button" class="trip-toggle" data-trip="multi-city" aria-pressed="false">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path
+                                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                            Multi-city
+                        </button>
+                    </div>
+
+                    <!-- Row 1: From and To -->
+                    <div class="search-row cities-row">
+                        <div class="form-group from-group">
+                            <label for="from-city" class="form-label">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z" />
+                                </svg>
+                                From
+                            </label>
+
+                            <input type="text" id="from-city" name="from" class="form-input"
+                                placeholder="City or airport" required>
+                        </div>
+
+                        <button type="button" class="swap-btn" aria-label="Swap departure and destination">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16" />
+                            </svg>
+                        </button>
+
+                        <div class="form-group to-group">
+                            <label for="to-city" class="form-label">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                To
+                            </label>
+                            <input type="text" id="to-city" name="to" class="form-input" placeholder="City or airport"
+                                required>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Dates and Passengers -->
+                    <div class="search-row dates-row">
+                        <div class="form-group">
+                            <label for="depart-date" class="form-label">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                Departure Date
+                            </label>
+                            <input type="date" id="depart-date" name="depart" class="form-input" required>
+                        </div>
+
+                        <div class="form-group return-date-group" id="return-date-group">
+                            <label for="return-date" class="form-label">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                Return Date
+                            </label>
+                            <input type="date" id="return-date" name="return" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adults" class="form-label">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                Passengers
+                            </label>
+                            <select id="adults" name="adults" class="form-input form-select">
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                                <option value="5">5 Adults</option>
+                                <option value="6">6+ Adults</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="search-btn-wrapper">
+                        <button type="submit" class="search-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="M21 21L16.65 16.65" />
+                            </svg>
+                            Search Flights
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Trust Bullets -->
+                <div class="trust-bullets" role="list" aria-label="Our promises">
+                    <div class="trust-bullet" role="listitem">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                        <span>Secure Booking</span>
+                    </div>
+                    <div class="trust-bullet" role="listitem">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                        <span>No Hidden Fees</span>
+                    </div>
+                    <div class="trust-bullet" role="listitem">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
+                            <path d="M14 2a8 8 0 0 1 8 8" />
+                            <path d="M14 6a4 4 0 0 1 4 4" />
+                        </svg>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="main-content">
+        <div class="container content-layout">
+            <!-- Sidebar - FAQ Topics -->
+            <aside class="sidebar" role="navigation" aria-label="Southwest Airlines Vacations">
+                <h2 class="sidebar-title">Southwest Airlines Vacations</h2>
+                <ul class="topic-list" role="tablist" aria-label="FAQ categories">
+                    <li>
+                        <button class="topic-btn active" role="tab" aria-selected="true"
+                            aria-controls="topic-reservations" data-topic="reservations" id="tab-reservations">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                            </svg>
+                            <span>Overview</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-name-change"
+                            data-topic="name-change" id="tab-name-change">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                            </svg>
+                            <span>Book & Manage</span>
+                        </button>
+                    </li>
+                <li>
+                            <details>
+                            <summary class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-classes-seats"
+                                data-topic="classes-seats" id="tab-classes-seats">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <path d="M4 20l4-4 4 4" />
+                                </svg>
+                                <span>Classes & Seats Selection</span>
+                                <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </summary>
+                            <ul class="submenu">
+                                <li><button class="topic-btn sub-topic-btn" id="tab-wanna-get-away" data-topic="wanna-get-away" aria-controls="topic-wanna-get-away">Wanna Get Away</button></li>
+                                <li><button class="topic-btn sub-topic-btn" id="tab-wanna-get-away-plus" data-topic="wanna-get-away-plus" aria-controls="topic-wanna-get-away-plus">Wanna Get Away Plus</button></li>
+                                <li><button class="topic-btn sub-topic-btn" id="tab-anytime" data-topic="anytime" aria-controls="topic-anytime">Anytime</button></li>
+                                <li><button class="topic-btn sub-topic-btn" id="tab-business-select" data-topic="business-select" aria-controls="topic-business-select">Business Select</button></li>
+                            </ul>
+                        </details>
+                    </li>
+                    
+                </ul>
+            </aside>
+
+            <!-- Content Panels -->
+            <div class="content-panels" style="overflow-x: hidden;">
+                <!-- Reservations Panel -->
+                <article class="topic-panel active" id="topic-reservations" role="tabpanel"
+                    aria-labelledby="tab-reservations">
+                    <div class="topic-header">
+                        <h2 class="topic-title">Southwest Airlines Overview</h2>
+                        <p class="topic-description">Looking for incredible deals on Southwest flights reservation?
+                            You're in the right
+                            spot! With our easy booking procedure, you can enjoy significant savings while you plan your
+                            next adventure.
+                            We handle everything from finding the best prices to ensuring a stress-free travel
+                            experience. Your time and
+                            money are valuable, so why compromise? At Fond Travels, travel is affordable, convenient,
+                            and tailored to
+                            fit your needs.</p>
+                        <p class="topic-description">Southwest US airlines, a major U.S. carrier, is known for its
+                            low-cost, no-frills
+                            service and friendly customer experience. The airline operates a fleet of Boeing 737
+                            aircraft and is
+                            headquartered in Dallas, Texas. Southwest Airlines cheap flights make it a popular choice
+                            for both leisure
+                            and business travelers looking for budget-friendly options without compromising on service.
+                        </p>
+                    </div>
+                    <!-- Flight Information -->
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Best flight deal:</span>
+                                <span class="info-value">San Diego, $42</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Cheapest month to fly:</span>
+                                <span class="info-value">November</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path
+                                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Destinations:</span>
+                                <span class="info-value">114</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 2l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 22l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Most popular airport:</span>
+                                <span class="info-value">Denver International</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Average flights per week:</span>
+                                <span class="info-value">98,668</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Useful Insights -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Useful Insights</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Hub Airports:</strong>
+                                <p>Dallas Love Field, Chicago Midway International Airport, Denver International
+                                    Airport, William P.
+                                    Hobby Airport, Las Vegas McCarran International Airport</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Head Quarter:</strong>
+                                <p>Dallas, Texas</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Frequent Flyer Program:</strong>
+                                <p>Rapid Rewards</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Popular Route:</strong>
+                                <p>Dallas - Los Angeles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Travel Trends -->
+                    <div class="trends-section">
+                        <h3 class="section-subtitle">Travel Trends</h3>
+                        <ul class="trends-list">
+                            <li>Leisure travel has increased by <strong>30%</strong> as more people choose vacations
+                                over business
+                                trips, boosting Southwest's leisure travel numbers.</li>
+                            <li>Domestic trips have surged by <strong>25%</strong> as travelers explore more U.S.
+                                destinations and
+                                benefit from Southwest's solid domestic routes.</li>
+                            <li>Mid-week and off-peak travel bookings rise by <strong>18%</strong> as travelers seek
+                                quieter and more
+                                budget-friendly flights.</li>
+                            <li>Increased demand for budget travel has grown by <strong>22%</strong> as price-sensitive
+                                travelers turn
+                                to Southwest's competitive fares during uncertain economic times.</li>
+                            <li>Group and family flight bookings increased by <strong>15%</strong> as Southwest's
+                                family-friendly perks
+                                make it a popular choice for families and groups traveling together.</li>
+                            <li>Flexible travel options are increasing by <strong>28%</strong>. Southwest's no-change
+                                fees attract
+                                travelers who value the ability to book flexibly.</li>
+                        </ul>
+                    </div>
+                    <!-- Top Airports Table -->
+                    <div class="airports-section">
+                        <h3 class="section-subtitle">Top Airports</h3>
+                        <p>Fly to various destinations from domestic and international airports today by boarding a
+                            Southwest Airlines
+                            flight.</p>
+                        <div class="table-responsive">
+                            <table class="airports-table">
+                                <thead>
+                                    <tr>
+                                        <th>Country</th>
+                                        <th>Airport Name</th>
+                                        <th>Airport Code</th>
+                                        <th>Number of Flights</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Denver International Airport</td>
+                                        <td>DEN</td>
+                                        <td>591</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Harry Reid International Airport</td>
+                                        <td>LAS</td>
+                                        <td>481</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Chicago Midway International</td>
+                                        <td>MDW</td>
+                                        <td>473</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Baltimore/Washington International</td>
+                                        <td>BWI</td>
+                                        <td>449</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Dallas Love Field</td>
+                                        <td>DAL</td>
+                                        <td>407</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Phoenix Sky Harbor International</td>
+                                        <td>PHX</td>
+                                        <td>377</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>William P. Hobby Airport</td>
+                                        <td>HOU</td>
+                                        <td>338</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Nashville International Airport</td>
+                                        <td>BNA</td>
+                                        <td>305</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>Orlando International Airport</td>
+                                        <td>MCO</td>
+                                        <td>285</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA</td>
+                                        <td>St. Louis Lambert International</td>
+                                        <td>STL</td>
+                                        <td>253</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- How to Find Cheap Flights -->
+                    <div class="tips-section">
+                        <h3 class="section-subtitle">How to Find Cheap Southwest Airlines Flights</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Use the Fond Travels Search Tool</h4>
+                                <p>Visit Fond Travels to easily compare prices for Southwest Airlines tickets. Our
+                                    user-friendly search
+                                    tool helps you find the best deals, ensuring you never miss out on great savings.
+                                </p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Sign Up for Fare Alerts</h4>
+                                <p>Subscribe to fare alerts to stay updated on price drops and exclusive offers for
+                                    Southwest Airlines
+                                    reservations. You can book your flights at the correct time and enjoy significant
+                                    discounts.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Flexible Travel Dates</h4>
+                                <p>Being flexible with your travel dates can lead to substantial savings. Look for
+                                    cheaper options on
+                                    nearby dates, maximizing your chances of lower fares with Southwest Airlines manage
+                                    booking.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Exclusive Phone-only Deals</h4>
+                                <p>Call Fond Travels at <a href="tel:+18007805923">1800-780-5923</a> to access
+                                    exclusive phone-only
+                                    deals and hidden discounts on Southwest Airlines reservations. Our agents will help
+                                    you book at
+                                    ridiculously low prices.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Join the Southwest Program</h4>
+                                <p>Sign up for Southwest's Rapid Rewards program to earn points on every flight. You can
+                                    redeem these
+                                    points for affordable airline tickets for your next adventure.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Book in Advance</h4>
+                                <p>Plan and book your airline reservations well in advance. Fond Travels suggests
+                                    checking Southwest
+                                    Airlines tickets best price 3-4 weeks before your travel date for the best fares.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Southwest Airlines FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-1">
+                                    <span>What is the cheapest day to fly Southwest Airlines?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-1" hidden>
+                                    <p>Generally, booking mid-week flights—especially on Tuesdays and Wednesdays—can
+                                        help you find lower
+                                        fares. Airlines often release deals early in the week, so checking prices during
+                                        these days may
+                                        give you access to better rates and special promotions.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-2">
+                                    <span>How can I get a discount on Southwest Airlines?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-2" hidden>
+                                    <p>To secure discounts on Southwest Airlines ticket bookings, consider booking
+                                        during sales events,
+                                        subscribing to their email notifications for exclusive offers, and joining the
+                                        Rapid Rewards
+                                        program to earn points redeemable for future flights.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-3">
+                                    <span>What month is the cheapest to fly to America?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-3" hidden>
+                                    <p>Flight prices to America fluctuate based on demand, but traveling during off-peak
+                                        months like
+                                        January and February often results in lower fares. Monitoring Southwest flight
+                                        bookings during
+                                        these periods can yield cost savings.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-4">
+                                    <span>Do Southwest Airlines offer Black Friday deals?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-4" hidden>
+                                    <p>Southwest Airlines typically participates in Black Friday promotions, offering
+                                        discounted fares
+                                        and special deals. Contacting us at <a href="tel:+18007805923">1800-780-5923</a> during the holiday season
+                                        can help you
+                                        find attractive Southwest Airlines booking offers.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-5">
+                                    <span>How do you save money on your Southwest reservations?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-5" hidden>
+                                    <p>To save on Southwest flight booking, book in advance, remain flexible with travel
+                                        dates, utilize
+                                        the Low Fare Calendar, and consider off-peak travel times. Additionally, joining
+                                        the Rapid
+                                        Rewards program can provide points for future discounts.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-6">
+                                    <span>Why book a Southwest Airlines flight through Fond Travels?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-6" hidden>
+                                    <p>Booking a Southwest flight through Fond Travels at <a href="tel:+18007805923">1800-780-5923</a> may offer
+                                        access to
+                                        exclusive airline deals and personalized customer service available 24/7 for
+                                        your assistance,
+                                        potentially providing additional savings and convenience.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-7">
+                                    <span>What do I need to know before making a Southwest Airlines reservation?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-7" hidden>
+                                    <p>Before making a Southwest Airlines reservation, be aware that Southwest does not
+                                        assign seats;
+                                        instead, it uses a boarding group system. Additionally, they offer two free
+                                        checked bags per
+                                        passenger and have a generous change and cancellation policy.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-res-8">
+                                    <span>How does Fond Travels find such low flight prices?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-res-8" hidden>
+                                    <p>Fond Travels leverages industry partnerships and advanced search algorithms to
+                                        identify and offer
+                                        competitive fares, including Southwest Airlines ticket booking options,
+                                        providing travelers with
+                                        cost-effective choices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Name Change Panel -->
+                <article class="topic-panel" id="topic-name-change" role="tabpanel" aria-labelledby="tab-name-change"
+                    hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Southwest Airlines Flights with Fond Travels</h2>
+                        <p class="topic-description">
+                            Book your Southwest Airlines ticket through Fond Travels — it's super easy. Enjoy fantastic
+                            deals on cheap Southwest Airlines flights tailored just for you.
+                            Whether it's a fun getaway or an important business trip, our dedicated team is ready to
+                            assist you at every step.
+                            Call us today at <a href="tel:+18007805923"><strong>1800-780-5923</strong></a> to discover fantastic airline deals and get
+                            ready for your next great escape.
+                        </p>
+                    </div>
+
+                    <div class="topic-header">
+                        <h2 class="topic-title">How to manage your Southwest Airlines flight booking?</h2>
+                        <p class="topic-description">
+                            Managing your Southwest Airlines flight booking is easy and straightforward. With the
+                            Southwest Airlines manage booking feature, you can conveniently access your reservation to
+                            make changes, view travel details, add services or cancel flight. You can also use these
+                            platforms to view your boarding pass, track your flight status, and get real-time updates.
+                            Simply enter your booking information on the Southwest Airlines website or mobile app, and
+                            you’ll have all the tools you need at your fingertips to ensure a smooth travel experience.
+                            If you need assistance, you can contact Southwest Airlines phone number.
+                        </p>
+                    </div>
+
+                    <div class="topic-header">
+                        <h2 class="topic-title">How to check Southwest flight status?</h2>
+                        <p class="topic-description">
+                            To check your Southwest flight status, visit the Southwest Airlines website or the Southwest
+                            app. You can enter your flight number, departure, or arrival details for real-time updates
+                            on delays, cancellations, or gate information. Additionally, you can track your flight’s
+                            status by signing into your account and accessing your trip details. Call Southwest Airlines
+                            reservations phone number for any issues or further assistance. Whether you need updates on
+                            your flight or help with your Southwest Airlines reservation, the customer support team can
+                            provide the information you need.
+                        </p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+
+                        <div class="accordion" role="region" aria-label="Name change FAQs">
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-name-1">
+                                    <span>How to manage your Southwest Airlines flight booking?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-name-1" hidden>
+                                    <p>
+                                        Managing your Southwest Airlines flight booking is easy and straightforward.
+                                        With the Southwest Airlines manage booking feature,
+                                        you can conveniently access your reservation to make changes, view travel
+                                        details, add services or cancel your flight.
+                                        You can also view your boarding pass, track your flight status, and get
+                                        real-time updates.
+                                        If you need assistance, call <a href="tel:+18007805923"><strong>1800-780-5923</strong></a> for quick support.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-name-2">
+                                    <span>How to check Southwest flight status?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-name-2" hidden>
+                                    <p>
+                                        To check your Southwest flight status, visit the Southwest Airlines website or
+                                        the Southwest mobile app.
+                                        Enter your flight number or departure/arrival details for real-time updates.
+                                        For issues or assistance, call Southwest support at
+                                        <a href="tel:+18007805923"><strong>1800-780-5923</strong></a>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-name-3">
+                                    <span>How can I check if a Southwest flight is on time?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-name-3" hidden>
+                                    <p>
+                                        To check if your Southwest Airlines flight is on time, go to the Southwest
+                                        flight status page on their website or app.
+                                        Enter your confirmation number or arrival/departure details to view real-time
+                                        updates.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-name-4">
+                                    <span>How do I find my Southwest flight number?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-name-4" hidden>
+                                    <p>
+                                        Your Southwest Airlines flight number is listed in the confirmation email you
+                                        receive after booking.
+                                        You can also find it in the “Manage Reservations” or “My Trips” section of the
+                                        Southwest website or app.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-name-5">
+                                    <span>How do I reschedule an already booked Southwest Airlines flight?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-name-5" hidden>
+                                    <p>
+                                        To reschedule your Southwest flight, log in to your Southwest account, go to
+                                        Manage Booking,
+                                        select your flight, and choose Modify. Southwest does not charge change fees,
+                                        but fare difference may apply.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-name-6">
+                                    <span>Is my Southwest Airlines flight full?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-name-6" hidden>
+                                    <p>
+                                        Southwest does not provide detailed seat capacity information.
+                                        However, you can check available seating during online check-in or once you
+                                        board.
+                                        Southwest follows an open-seating policy where passengers may choose any
+                                        available seat.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-name-7">
+                                    <span>How can I manage my booking with Southwest Airlines?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-name-7" hidden>
+                                    <p>
+                                        You can manage your Southwest Airlines booking through the “Manage Reservations”
+                                        section on their website or app.
+                                        Log in using your confirmation number and name to change flights, update
+                                        details, cancel a booking,
+                                        or add EarlyBird Check-In.
+                                        For more assistance, call <a href="tel:+18007805923"><strong>1800-780-5923</strong></a>.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Classes & Seats Selection Panel -->
+                <article class="topic-panel" id="topic-classes-seats" role="tabpanel" aria-labelledby="tab-classes-seats" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Classes & Seats Selection</h2>
+                        <p class="topic-description">Discover Desttino's fare classes and choose the perfect option for your travel needs. Each class offers unique benefits, from budget-friendly options to premium perks, ensuring a comfortable and rewarding journey.</p>
+                    </div>
+
+                    <!-- Fare Classes Information -->
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Most Popular Class:</span>
+                                <span class="info-value">Wanna Get Away Plus</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Points Range:</span>
+                                <span class="info-value">6-12 per dollar</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Refundable Classes:</span>
+                                <span class="info-value">Anytime & Business Select</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            <div class="info-content">
+                                <span class="info-label">Free Bags:</span>
+                                <span class="info-value">2 checked per passenger</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Useful Insights -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Fare Class Insights</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Wanna Get Away:</strong>
+                                <p>Perfect for travelers on a tight budget. Earn 6 points per dollar with basic perks. Ideal for short trips where flexibility isn't a priority.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Wanna Get Away Plus:</strong>
+                                <p>Our most popular choice balancing cost and convenience. 8 points per dollar, priority boarding, and same-day changes make it versatile for various travel scenarios.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Anytime:</strong>
+                                <p>For flexible travelers needing full refunds and premium boarding. Earn 10 points per dollar with EarlyBird Check-In included.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Business Select:</strong>
+                                <p>Luxury travel with 12 points per dollar, complimentary drinks, and free Wi-Fi. Designed for business professionals and those seeking premium service.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- How to Choose Your Fare Class -->
+                    <div class="tips-section">
+                        <h3 class="section-subtitle">How to Choose Your Desttino Fare Class</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Assess Your Travel Needs</h4>
+                                <p>Consider your trip length, flexibility requirements, and budget. If you're unsure about dates, opt for Anytime or Business Select for refundability.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Factor in Rewards Points</h4>
+                                <p>Higher fare classes earn more Desttino Rewards points. If you fly frequently, Business Select can help you accumulate points faster for future travel.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Check Additional Perks</h4>
+                                <p>Priority boarding and complimentary amenities in premium classes can enhance your travel experience, especially for longer flights.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Compare with Competitors</h4>
+                                <p>Desttino offers competitive pricing with no hidden fees. Compare our fare classes against other airlines to ensure you're getting the best value.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Book Early for Best Rates</h4>
+                                <p>Secure lower fares by booking in advance. Use our fare calendar to find the cheapest dates and lock in your preferred fare class.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Contact Our Experts</h4>
+                                <p>Call <a href="tel:+18007805923">1800-780-5923</a> for personalized recommendations. Our travel specialists can help you select the perfect fare class for your journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Desttino Fare Classes FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-1">
+                                    <span>What is the difference between Desttino's Basic Economy and Main Cabin?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-classes-1" hidden>
+                                    <p>Basic Economy fares are the most restrictive option, with no seat selection, no changes or cancellations allowed, and boarding last. Main Cabin offers more flexibility, including the ability to select seats and make changes for a fee.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-2">
+                                    <span>Can I upgrade my fare class after booking?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-classes-2" hidden>
+                                    <p>Yes, fare upgrades are available at the airport or through our website/app, subject to availability and fare difference. Contact Desttino support at <a href="tel:+18007805923">1800-780-5923</a> for assistance with upgrades.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-3">
+                                    <span>How do I earn and redeem Desttino Rewards points?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-classes-3" hidden>
+                                    <p>Points are earned based on your fare class and amount spent. Wanna Get Away earns 6 points per dollar, Wanna Get Away Plus earns 8, Anytime earns 10, and Business Select earns 12. Points can be redeemed for future flights, upgrades, or other travel benefits through your Desttino Rewards account.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-4">
+                                    <span>Are there any restrictions on fare class changes?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-classes-4" hidden>
+                                    <p>Fare class changes are subject to availability and may incur fees. Wanna Get Away and Wanna Get Away Plus are non-refundable but can be changed for a fee. Anytime and Business Select offer more flexibility with full refunds available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Wanna Get Away Panel -->
+                <article class="topic-panel" id="topic-wanna-get-away" role="tabpanel" aria-labelledby="tab-wanna-get-away" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Wanna Get Away</h2>
+                        <p class="topic-description">Southwest Airlines is known for its budget-friendly choices, and one of its most popular fare choices is the Wanna Get Away ticket. It offers passengers affordable prices while still delivering Southwest's signature hospitality and flexibility. This is a fantastic option to save on airfare without sacrificing comfort.</p>
+                    </div>
+
+                    <!-- What is a Wanna Get Away Ticket -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">What is a Wanna Get Away Ticket?</h3>
+                        <p>The Wanna Get Away fare is Southwest's lowest-priced option for domestic flights. It's ideal for travelers who want a no-frills experience, with a seat selection based on when you check-in. Unlike many traditional airlines, Southwest doesn't assign seats in advance. Instead, you'll be placed in a boarding group (A, B, or C) based on your check-in time. Arriving early will improve your chances of snagging a prime seat.</p>
+                        <p>Southwest Wanna Get Away tickets are non-refundable, but you can cancel or change your flight for a small fee, making this fare option more flexible than others. Plus, it includes two free checked bags, a huge perk. For further queries, contact us at <a href="tel:+18007805923">1800-780-5923</a>.</p>
+                    </div>
+
+                    <!-- Perks -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Perks</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Affordable Pricing:</strong>
+                                <p>Wanna Get Away fares are often the most budget-friendly option for domestic travel.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Free Bags:</strong>
+                                <p>Unlike many other low-cost carriers, Southwest allows two free checked bags, a great deal for travelers.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>No Change Fees:</strong>
+                                <p>While a small fee applies for changes, there are no hefty change fees like other airlines charge.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Limitations -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Limitations</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>No Seat Selection:</strong>
+                                <p>Seats should be assigned in advance. Boarding is based on check-in time, so earlier check-ins offer better seating options.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Non-refundable:</strong>
+                                <p>Wanna Get Away tickets are non-refundable. If you cancel, you get travel credit minus fees.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>No Priority Boarding:</strong>
+                                <p>There is no priority boarding with this fare. To improve your boarding group, check in early or purchase EarlyBird Check-In.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Limited to Domestic Routes:</strong>
+                                <p>Primarily for domestic flights, although some international routes are available. Check for destination availability before booking.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>No Upgraded Amenities:</strong>
+                                <p>Wanna Get Away tickets do not include perks like priority seating, extra legroom, or first-class services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Wanna Get Away FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-1">
+                                    <span>What is the Wanna Get Away fare?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wga-1" hidden>
+                                    <p>The Wanna Get Away fare is Southwest Airlines' most affordable option for domestic flights. It offers low prices with two free checked bags and flexible change policies, though seats are assigned based on check-in time.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-2">
+                                    <span>Can I choose my seat with Wanna Get Away?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wga-2" hidden>
+                                    <p>Southwest doesn't assign seats in advance. With Wanna Get Away, you'll be placed in a boarding group (A, B, or C) based on your check-in time. Earlier check-ins give you better chances for preferred seats.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-3">
+                                    <span>Are Wanna Get Away tickets refundable?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wga-3" hidden>
+                                    <p>Wanna Get Away tickets are non-refundable. If you cancel, you'll receive travel credit minus any applicable fees. Changes are allowed for a fee plus any fare difference.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-4">
+                                    <span>How many bags are included with Wanna Get Away?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wga-4" hidden>
+                                    <p>Wanna Get Away includes two free checked bags per passenger, which is a great perk compared to many other budget airlines that charge for checked baggage.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-5">
+                                    <span>When should I book Wanna Get Away fares?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wga-5" hidden>
+                                    <p>Book Wanna Get Away fares as early as possible for the best prices. Southwest releases fares 24 hours at a time, so checking regularly and booking during sales can help you find the lowest rates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Wanna Get Away Plus Panel -->
+                <article class="topic-panel" id="topic-wanna-get-away-plus" role="tabpanel" aria-labelledby="tab-wanna-get-away-plus" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Wanna Get Away Plus</h2>
+                        <p class="topic-description">Wanna Get Away Plus is an upgraded version of Southwest Airlines' popular Wanna Get Away fare. It offers more flexibility and perks, making it an excellent option for travelers who want more from their Southwest flight booking experience at <a href="tel:+18007805923">1800-780-5923</a> without paying for Business Select or First Class.</p>
+                    </div>
+
+                    <!-- What is a Wanna Get Away Ticket -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">What is a Wanna Get Away Ticket?</h3>
+                        <p>Wanna Get Away Plus fares offer all the great benefits of the regular Wanna Get Away ticket but with added perks. These include more flexibility when changing flights, a greater chance of securing A-list status, and priority boarding in some cases. It's ideal for those looking for budget-friendly travel but needing extra flexibility for their Southwest flight booking.</p>
+                    </div>
+
+                    <!-- Perks -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Perks</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Increased Flexibility :</strong>
+                                <p>Changes to flights are more manageable and often come without additional fees. If you rebook the same flight, this fare allows changes without paying the fare difference.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Priority Boarding :</strong>
+                                <p>You may be eligible for priority boarding, helping you get better seating options.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>A-List Qualification :</strong>
+                                <p>Wanna Get Away Plus fares help you earn A-list status faster, which gives you even more perks like priority check-in and boarding.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Free Bags :</strong>
+                                <p>Like the standard Wanna Get Away, you still get two free checked bags and one free carry-on bag.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Flexible Travel Credit :</strong>
+                                <p>The fare gives you more flexibility for credit without hefty fees if you need to cancel.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Limitations -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Limitations</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>No Assigned Seating :</strong>
+                                <p>Wanna Get Away Plus does not offer pre-assigned seating like other Southwest fares.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Higher Cost than Wanna Get Away :</strong>
+                                <p>While it offers added perks, Wanna Get Away Plus is more expensive than the standard fare.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Limited Availability :</strong>
+                                <p>Wanna Get Away Plus fares are only sometimes available on every route or flight, especially during peak travel. Availability is more limited.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>No First-Class Amenities :</strong>
+                                <p>Although it offers flexibility, Wanna Get Away Plus does not book First-Class flight amenities, such as extra legroom, upgraded meals, or premium seating.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Non-Refundable :</strong>
+                                <p>Like the standard Wanna Get Away fare, Wanna Get Away Plus tickets are non-refundable. While travel credits are more flexible</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Wanna Get Away Plus FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-1">
+                                    <span>How is Wanna Get Away Plus different from the regular Wanna Get Away fare?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wgap-1" hidden>
+                                    <p>Wanna Get Away Plus offers flexibility in southwest flight booking, including easier flight changes and additional perks like priority boarding and faster A-list qualification.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-2">
+                                    <span>Can I book a flight on Southwest Airlines using Wanna Get Away Plus?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wgap-2" hidden>
+                                    <p>You can secure a flight on Southwest Airlines using Wanna Get Away Plus. It provides a balance of savings and benefits, ideal for travelers seeking more flexibility at an affordable price.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-3">
+                                    <span>How does Wanna Get Away Plus affect my Southwest flight booking?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wgap-3" hidden>
+                                    <p>With Wanna Get Away Plus, you can change your Southwest flight booking with fewer restrictions, and you're more likely to get A-list status benefits.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-4">
+                                    <span>Does Wanna Get Away Plus include priority boarding?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wgap-4" hidden>
+                                    <p>Yes, one of the benefits of Wanna Get Away Plus is access to priority boarding, giving you a better chance of choosing your preferred seat.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-5">
+                                    <span>How can I find airline deals for Wanna Get Away Plus?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wgap-5" hidden>
+                                    <p>You can find airline deals by visiting Southwest's special promotions page, signing up for their email alerts, or booking during sales events. Keep an eye out for Southwest US Airlines discounts or call us at <a href="tel:+18007805923">1800-780-5923</a> for all flight bookings.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-6">
+                                    <span>Can I use reservations for Wanna Get Away Plus?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-wgap-6" hidden>
+                                    <p>Wanna Get Away Plus offers an enhanced experience for those who want more flexibility and benefits while booking with Southwest Airlines. Whether you're looking for added convenience, Southwest flight booking perks, or better seating, this option may be ideal for your next trip.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Anytime Panel -->
+                <article class="topic-panel" id="topic-anytime" role="tabpanel" aria-labelledby="tab-anytime" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Anytime</h2>
+                        <p class="topic-description">The Anytime Fare with Southwest Airlines is an excellent choice if you're looking for ultimate flexibility. It's designed for travelers who want more freedom to change their plans without restrictions. Whether you need to make last-minute changes or secure priority boarding, Anytime Fare provides it all. Let's dive deeper into what makes this fare stand out and what limitations you should consider.</p>
+                    </div>
+
+                    <!-- What is the Anytime Fare -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">What is the Anytime Fare?</h3>
+                        <p>The Anytime Fare is one of Southwest's premium options that offers maximum flexibility. Unlike Wanna Get Away or Wanna Get Away Plus, this fare allows you to change or cancel your flight without paying change fees. If you're booking Southwest Airlines tickets, it's the perfect choice for those with unpredictable schedules or business trips. You'll also enjoy more benefits, including priority boarding and a higher chance of earning Rapid Rewards points faster.</p>
+                        <p>The Anytime Fare provides access to all of Southwest's amenities, which is excellent for those traveling on business class flights or international routes and ensures a smoother travel experience.</p>
+                    </div>
+
+                    <!-- Perks -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Perks</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Flexible Flight Changes:</strong>
+                                <p>The Anytime Fare allows you to change or cancel your flight without paying a change price. You just pay any difference in fare if you book a more expensive flight.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Priority Boarding:</strong>
+                                <p>With Anytime Fare, you receive priority boarding (Group A), giving you early access to select a seat. This is a huge perk compared to standard fare options.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Two Free Checked Bags:</strong>
+                                <p>Southwest remains one of the few airlines offering two free checked bags with every fare, and Anytime Fare is no exception. These perks can save you a considerable amount on your trip.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Earn Rapid Rewards Faster:</strong>
+                                <p>For those looking to rack up Rapid Rewards points, Anytime Fare gives you more points per flight, helping you reach Southwest Airlines reservations quicker.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Full Refundability:</strong>
+                                <p>Anytime Fares are fully refundable if your plans change unexpectedly, unlike lower-tier fares offering travel credit or no refund.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Limitations -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Limitations</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Higher Price:</strong>
+                                <p>The Anytime Fare is more expensive than Wanna Get Away or Wanna Get Away Plus tickets. The price reflects the added flexibility, but budget travelers may have more cost-effective choices.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>No First-Class Seating:</strong>
+                                <p>While you'll get priority boarding and flexibility, Anytime Fare doesn't include First-Class seating. You'll need to consider other options for premium service or Southwest business class flights.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Limited to Certain Routes:</strong>
+                                <p>Anytime fares are available on most routes, but Southwest Air international flights may have more limited options, and availability may vary depending on the destination.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Not Available on All Flights:</strong>
+                                <p>The Anytime Fare might not be available on some Southwest flights. It's more common on higher-demand or business routes, but you may need to check if it's available when making Southwest Airlines reservations.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>No Extra Perks for Upgrades:</strong>
+                                <p>While you get priority boarding and flexibility, Anytime Fare does not provide additional amenities such as lounge access or meals, which are typically associated with business or higher-tier fare classes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Anytime FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-1">
+                                    <span>What makes the Anytime Fare different from other Southwest fares?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-anytime-1" hidden>
+                                    <p>The Anytime Fare offers more flexibility than the Wanna Get Away and Wanna Get Away Plus fares. You can change or cancel your flight without a fee, and you'll receive priority boarding, better Rapid Rewards points earning potential, and a full refund if needed.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-2">
+                                    <span>Can I get Southwest Airlines tickets at the best price with the Anytime Fare?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-anytime-2" hidden>
+                                    <p>While the Anytime Fare isn't the cheapest option, you get added value in flexibility and perks. If you need the ability to change flights at no extra cost, it's worth the investment, especially for frequent travelers looking for airline deals.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-3">
+                                    <span>Are there Southwest Air international flights available with the Anytime Fare?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-anytime-3" hidden>
+                                    <p>The Anytime Fare is available on most domestic and Southwest Air international flights. However, availability may vary by route, and it's always good to check with Southwest Airlines reservations for specific international options.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-4">
+                                    <span>Does Anytime Fare include priority boarding?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-anytime-4" hidden>
+                                    <p>Yes, one of the key perks of the Anytime Fare is priority boarding. Passengers in this fare are placed in Group A for boarding, which allows you to choose your seat before most other passengers.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-5">
+                                    <span>Can I make changes to my flight if I book Southwest Airlines reservations with the Anytime Fare?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-anytime-5" hidden>
+                                    <p>Yes, the Anytime Fare allows you to change your flight without incurring change fees, making it ideal for those with flexible travel plans. You'll only pay for any fare difference if the new flight is more expensive.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-6">
+                                    <span>How do I reach Southwest Airlines Reservations' phone number for questions about Anytime Fare?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-anytime-6" hidden>
+                                    <p>You can reach Southwest Airlines reservations phone number for assistance or call us at <a href="tel:+18007805923">1800-780-5923</a> for Anytime Fare bookings, changes, or any other inquiries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Business Select Panel -->
+                <article class="topic-panel" id="topic-business-select" role="tabpanel" aria-labelledby="tab-business-select" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Business Select</h2>
+                        <p class="topic-description">If you're looking for extra comfort, flexibility, and convenience while flying with Desttino, Business Select is the way to go. This fare class is a step up from the standard economy options, offering a range of perks to make your travel experience more pleasant.</p>
+                    </div>
+
+                    <!-- What is Business Select -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">What is Business Select?</h3>
+                        <p>Business Select is the Desttino premium economy class/fare. It is designed to provide travelers with higher service and comfort compared to standard economy options like Wanna Get Away or Wanna Get Away Plus. It's an excellent choice for those who want to experience added benefits, such as priority boarding, increased flexibility, and more rewards, without paying for traditional first-class tickets. Book your flight reservation hassle free with Desttino at <a href="tel:+18007805923">1800-780-5923</a>.</p>
+                    </div>
+
+                    <!-- Perks -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Perks</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Priority Boarding:</strong>
+                                <p>One of the standout perks of Business Select is priority boarding. You'll be among the first to board the plane, allowing you to secure your preferred seat (before groups B and C board). This is perfect for travelers who want to settle in quickly and get the best choice of seating.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Bonus Desttino Rewards Points:</strong>
+                                <p>With Business Select, you earn extra Desttino Rewards points per flight. These bonus points help you earn free flights faster, making it an excellent option for frequent flyers looking to maximize their rewards.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Free Premium Drink:</strong>
+                                <p>Enjoy a complimentary premium drink during the flight, available to Business Select passengers. Whether it's a cocktail, wine, or beer, you can relax with a beverage as you soar through the skies.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Refundable Ticket:</strong>
+                                <p>Unlike Wanna Get Away and Wanna Get Away Plus, Business Select fares are refundable. If your plans change, you can cancel your flight and get your money back through travel credit. This flexibility is perfect for travelers who need peace of mind with their Desttino reservations.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>EarlyBird Check-In Included:</strong>
+                                <p>Business Select passengers automatically get EarlyBird Check-In, ensuring they are checked 36 hours before departure. This means a higher likelihood of securing a top boarding position without manually checking in early.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Limitations -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Limitations</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>No First-Class Cabin:</strong>
+                                <p>While Business Select offers premium perks, it does not provide a first-class cabin experience. The seats are still in the economy section, with no additional space or luxury seating like other airlines' First-Class options.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>More Expensive:</strong>
+                                <p>Compared to the Wanna Get Away or Wanna Get Away Plus fares, Business Select is more expensive. This may only be ideal for budget-conscious travelers if the added perks are essential to them.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Limited Availability:</strong>
+                                <p>Business Select tickets may only sometimes be available on some flights, especially during high-demand travel periods. Availability can be limited, so booking early when looking for Desttino airfare deals is a good idea.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Not Fully Refundable for Cash:</strong>
+                                <p>While Business Select tickets are refundable, if you need to cancel, you'll receive the refund in Desttino airfares or travel credit, not cash.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Still No Seat Assignments:</strong>
+                                <p>Like other Desttino tickets, Business Select does not offer pre-assigned seating. While you board early and have a higher chance of securing a great seat, it's still an open seating policy, so seating is on a first-come, first-served basis within your boarding group.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Business Select FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-1">
+                                    <span>What makes Business Select different from regular Desttino fares?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-bs-1" hidden>
+                                    <p>Business Select offers priority boarding, extra Desttino Rewards points, a complimentary premium drink, EarlyBird Check-In, and flexibility to change or cancel your flight. It's perfect for those who want more comfort and convenience during their Desttino airfare experience.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-2">
+                                    <span>Can I use a Desttino reservation to book Business Select?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-bs-2" hidden>
+                                    <p>You can easily make Desttino reservations to book Business Select tickets through their website, mobile app, or by calling us at <a href="tel:+18007805923">1800-780-5923</a>.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-3">
+                                    <span>Are there any airline deals for Business Select tickets?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-bs-3" hidden>
+                                    <p>Yes, airline deals and special offers for Business Select tickets do pop up from time to time, especially during promotional periods. Signing up for the Desttino email list or checking their offers page is a good way to snag Desttino airfare deals.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-4">
+                                    <span>How do I get the best Desttino airfare deals for Business Select?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-bs-4" hidden>
+                                    <p>To get the best Desttino airfare deals, book early, look for promotions, and watch Desttino's sales events. Desttino's Rewards program can also help you save money on future bookings.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-5">
+                                    <span>Is Business Select worth the extra cost compared to Wanna Get Away?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-bs-5" hidden>
+                                    <p>If you value priority boarding, extra points, a complimentary drink, and the flexibility of a refundable ticket, Business Select is definitely worth the additional cost. It's ideal for travelers who need a little more comfort or those flying frequently with Desttino.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-6">
+                                    <span>Can I upgrade to Business Select after booking a regular ticket?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-bs-6" hidden>
+                                    <p>Yes, you can upgrade to Business Select after booking a standard fare by paying the fare difference. You can do this through your Desttino reservation or during check-in. Keep an eye on availability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+    </main>
+
+    <!-- Promo Strip - Redesigned -->
+    <section class="promo-strip" aria-labelledby="promo-title">
+        <div class="container">
+            <div class="promo-card">
+                <div class="promo-content">
+                    <div class="promo-badge">
+                        <span class="discount-text">20% OFF</span>
+                    </div>
+                    <div class="promo-info">
+                        <h3 id="promo-title">Exclusive Phone Booking Discount</h3>
+                        <p>Call now and save big on your next flight! Our travel experts are available 24/7 to help you
+                            find the best deals.</p>
+                    </div>
+                </div>
+                <div class="promo-actions">
+                    <a href="tel:+18007805923" class="promo-cta promo-cta-primary">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        Call Now: <a href="tel:+18007805923">1800-780-5923</a>
+                    </a>
+                    <a href="#search-form" class="promo-cta promo-cta-secondary">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21L16.65 16.65" />
+                        </svg>
+                        Search Flights
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="disclaimer-section">
+        <div class="container">
+            <p class="disclaimer-text">Disclaimer : We are independent travel agents and are not directly affiliated, endorsed, authorized, or associated with any airline or its subsidiaries</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo" style="display:none">
+        <div class="container footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Desttino Home">
+                        <img src="attached_assets/logo (1)_1764409813289.jpg" alt="Desttino Logo"
+                            class="footer-logo-img">
+                    </a>
+                    <p class="footer-tagline">Explore More With Desttino. Your trusted partner for affordable air
+                        travel.</p>
+                </div>
+
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#search-form">Search Flights</a></li>
+                            <li><a href="#popular-flights">Popular Deals</a></li>
+                            <li><a href="#reservations">Reservations</a></li>
+                            <li><a href="#cancellations">Cancellations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Help & Support</h4>
+                        <ul>
+                            <li><a href="#name-change">Name Changes</a></li>
+                            <li><a href="#baggage">Baggage Info</a></li>
+                            <li><a href="#checkin">Check-in Help</a></li>
+                            <li><a href="tel:+18007805923">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="footer-subscribe">
+                    <h4>Stay Connected</h4>
+                    <form class="footer-form" aria-label="Footer newsletter signup">
+                        <label for="footer-email" class="visually-hidden">Email for newsletter</label>
+                        <input type="email" id="footer-email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p class="footer-promo">Book next time and get <strong>20% discount!</strong></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Desttino. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile CTA - Redesigned -->
+    <div class="mobile-cta" role="complementary" aria-label="Quick contact">
+        <a href="tel:+18007805923" class="mobile-cta-btn">
+            <div class="mobile-cta-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+            </div>
+            <div class="mobile-cta-text">
+                <span class="cta-label">Call to Book</span>
+                <span class="cta-number">1800-780-5923</span>
+            </div>
+            <div class="mobile-cta-badge">20% OFF</div>
+        </a>
+    </div>
+
+    <!-- Floating Desktop Call Button -->
+    <button class="floating-cta" id="floating-cta" aria-label="Call for assistance"
+        onclick="window.location.href='tel:+18007805923'">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        <span class="floating-tooltip">Get 20% Off - Call Now!</span>
+    </button>
+
+    <!-- Promo Notification Popup -->
+    <div class="promo-notification" id="promo-notification" role="dialog" aria-labelledby="promo-notification-title"
+        aria-hidden="true">
+        <button class="promo-notification-close" id="promo-notification-close" aria-label="Close notification">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+        <div class="promo-notification-content">
+            <div class="promo-notification-badge">
+                <span class="promo-discount">20%</span>
+                <span class="promo-off">OFF</span>
+            </div>
+            <div class="promo-notification-text">
+                <h3 id="promo-notification-title">Exclusive Phone Discount!</h3>
+                <p>Call now to unlock instant savings on your booking</p>
+            </div>
+            <a href="tel:+18007805923" class="promo-notification-cta">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                1800-780-5923
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+document.getElementById("from-city").addEventListener("focus", function () {
+    window.location.href = "https://desttino.com";
+});
+</script>
+
+</body>
+
+</html>
