@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -37,7 +38,7 @@
             <div class="header-right">
                 <div class="support-info">
                     <span class="support-text">24/7 Support Available</span>
-                    <a href="tel:+18007805923" class="phone-link">
+                    <a href="tel:18007805923" class="phone-link">
                         <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path
@@ -58,14 +59,13 @@
             <ul class="mobile-nav-list">
                 <li><a href="#reservations">Reservations</a></li>
                 <li><a href="#name-change">Name Changes</a></li>
+                <li><a href="#baggage">Baggage</a></li>
                 <li><a href="#cancellations">Cancellations</a></li>
                 <li><a href="#popular-flights">Popular Flights</a></li>
-                <li><a href="tel:+18007805923" class="mobile-call-btn">Call Now: 1800-780-5923</a></li>
+                <li><a href="tel:18007805923" class="mobile-call-btn">Call Now: 1800-780-5923</a></li>
             </ul>
         </nav>
     </header>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         /* MAIN FLEX LAYOUT */
@@ -264,10 +264,17 @@
 
             <!-- LEFT SIDE CONTENT -->
             <div class="flight-left">
-                
+                <div class="hero-highlight">
+                    <span class="highlight-number">1M+</span>
+                    <span class="highlight-text">Flights Booked</span>
+                </div>
+                <h1 class="hero-main-title fw-bold mb-3" style="color:white">
+                    Instant Flight Support – 24/7
+                </h1>
+
                 <!-- CALL BOX -->
                 <div class="hero-call-wrapper">
-                    <a href="tel:+18007805923" class="hero-call-box" style="    background: #ffffff;
+                    <a href="tel:18007805923" class="hero-call-box" style="    background: #ffffff;
                         padding: 14px 30px;
                         border-radius: 14px;
                         display: inline-flex;
@@ -490,10 +497,10 @@
                             <span>Book & Manage</span>
                         </button>
                     </li>
-                <li>
-                            <details>
-                            <summary class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-classes-seats"
-                                data-topic="classes-seats" id="tab-classes-seats">
+                    <li>
+                        <details>
+                            <summary class="topic-btn" role="tab" aria-selected="false"
+                                aria-controls="topic-classes-seats" data-topic="classes-seats" id="tab-classes-seats">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -503,19 +510,97 @@
                                     <path d="M4 20l4-4 4 4" />
                                 </svg>
                                 <span>Classes & Seats Selection</span>
-                                <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
                                     <polyline points="6,9 12,15 18,9"></polyline>
                                 </svg>
                             </summary>
                             <ul class="submenu">
-                                <li><button class="topic-btn sub-topic-btn" id="tab-wanna-get-away" data-topic="wanna-get-away" aria-controls="topic-wanna-get-away">Wanna Get Away</button></li>
-                                <li><button class="topic-btn sub-topic-btn" id="tab-wanna-get-away-plus" data-topic="wanna-get-away-plus" aria-controls="topic-wanna-get-away-plus">Wanna Get Away Plus</button></li>
-                                <li><button class="topic-btn sub-topic-btn" id="tab-anytime" data-topic="anytime" aria-controls="topic-anytime">Anytime</button></li>
-                                <li><button class="topic-btn sub-topic-btn" id="tab-business-select" data-topic="business-select" aria-controls="topic-business-select">Business Select</button></li>
+                                <li><button class="topic-btn sub-topic-btn" id="tab-wanna-get-away"
+                                        data-topic="wanna-get-away" aria-controls="topic-wanna-get-away">Wanna Get
+                                        Away</button></li>
+                                <li><button class="topic-btn sub-topic-btn" id="tab-wanna-get-away-plus"
+                                        data-topic="wanna-get-away-plus" aria-controls="topic-wanna-get-away-plus">Wanna
+                                        Get Away Plus</button></li>
+                                <li><button class="topic-btn sub-topic-btn" id="tab-anytime" data-topic="anytime"
+                                        aria-controls="topic-anytime">Anytime</button></li>
+                                <li><button class="topic-btn sub-topic-btn" id="tab-business-select"
+                                        data-topic="business-select" aria-controls="topic-business-select">Business
+                                        Select</button></li>
                             </ul>
                         </details>
                     </li>
-                    
+                    <li>
+                        <button class="topic-btn" role="tab" aria-selected="false"
+                            aria-controls="topic-check-in-onboard" data-topic="check-in-onboard"
+                            id="tab-check-in-onboard">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                            <span>Check-in & Onboard</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-baggage"
+                            data-topic="baggage" id="tab-baggage">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 2l3 3h6l3-3M6 5h12v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5z" />
+                                <line x1="10" y1="9" x2="14" y2="9" />
+                                <line x1="10" y1="13" x2="14" y2="13" />
+                            </svg>
+                            <span>Baggage</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-pet-travel"
+                            data-topic="pet-travel" id="tab-pet-travel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Pet Travel</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-unaccompanied-minor-infant"
+                            data-topic="unaccompanied-minor-infant" id="tab-unaccompanied-minor-infant">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2a3 3 0 0 0-3 3v1H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-2V5a3 3 0 0 0-3-3z" />
+                                <circle cx="12" cy="10" r="2" />
+                                <path d="M9 14h6" />
+                            </svg>
+                            <span>Unaccompanied Minor & Infant</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-cancellation-refund"
+                            data-topic="cancellation-refund" id="tab-cancellation-refund">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                                <path d="M21 3v5h-5" />
+                                <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                                <path d="M8 16H3v5" />
+                            </svg>
+                            <span>Cancellation & Refund</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="topic-btn" role="tab" aria-selected="false" aria-controls="topic-flight-name-date-change"
+                            data-topic="flight-name-date-change" id="tab-flight-name-date-change">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                            </svg>
+                            <span>Flight Name & Date Change</span>
+                        </button>
+                    </li>
                 </ul>
             </aside>
 
@@ -846,7 +931,7 @@
                                 <div class="accordion-content" id="faq-res-4" hidden>
                                     <p>Southwest Airlines typically participates in Black Friday promotions, offering
                                         discounted fares
-                                        and special deals. Contacting us at <a href="tel:+18007805923">1800-780-5923</a> during the holiday season
+                                        and special deals. Contacting us at 1800-780-5923 during the holiday season
                                         can help you
                                         find attractive Southwest Airlines booking offers.</p>
                                 </div>
@@ -876,7 +961,7 @@
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-res-6" hidden>
-                                    <p>Booking a Southwest flight through Fond Travels at <a href="tel:+18007805923">1800-780-5923</a> may offer
+                                    <p>Booking a Southwest flight through Fond Travels at 1800-780-5923 may offer
                                         access to
                                         exclusive airline deals and personalized customer service available 24/7 for
                                         your assistance,
@@ -929,7 +1014,7 @@
                             deals on cheap Southwest Airlines flights tailored just for you.
                             Whether it's a fun getaway or an important business trip, our dedicated team is ready to
                             assist you at every step.
-                            Call us today at <a href="tel:+18007805923"><strong>1800-780-5923</strong></a> to discover fantastic airline deals and get
+                            Call us today at <strong>1800-780-5923</strong> to discover fantastic airline deals and get
                             ready for your next great escape.
                         </p>
                     </div>
@@ -981,7 +1066,7 @@
                                         details, add services or cancel your flight.
                                         You can also view your boarding pass, track your flight status, and get
                                         real-time updates.
-                                        If you need assistance, call <a href="tel:+18007805923"><strong>1800-780-5923</strong></a> for quick support.
+                                        If you need assistance, call <strong>1800-780-5923</strong> for quick support.
                                     </p>
                                 </div>
                             </div>
@@ -1000,7 +1085,7 @@
                                         the Southwest mobile app.
                                         Enter your flight number or departure/arrival details for real-time updates.
                                         For issues or assistance, call Southwest support at
-                                        <a href="tel:+18007805923"><strong>1800-780-5923</strong></a>.
+                                        <strong>1800-780-5923</strong>.
                                     </p>
                                 </div>
                             </div>
@@ -1093,7 +1178,7 @@
                                         Log in using your confirmation number and name to change flights, update
                                         details, cancel a booking,
                                         or add EarlyBird Check-In.
-                                        For more assistance, call <a href="tel:+18007805923"><strong>1800-780-5923</strong></a>.
+                                        For more assistance, call <strong>1800-780-5923</strong>.
                                     </p>
                                 </div>
                             </div>
@@ -1102,18 +1187,555 @@
                     </div>
                 </article>
 
+                <!-- Check-in & Onboard Panel -->
+                <article class="topic-panel" id="topic-check-in-onboard" role="tabpanel"
+                    aria-labelledby="tab-check-in-onboard" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Check-in & Onboard</h2>
+                        <p class="topic-description">Southwest Airlines check-in process is smooth, providing several
+                            options to suit different types of travelers. Whether you're booking cheap Southwest flights
+                            or have Southwest Airlines tickets, there's a check-in method that fits your needs.</p>
+                    </div>
+
+                    <!-- Check-in Information -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Check-in Options</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Online Check-in:</strong>
+                                <p>Check in online starting 24 hours before departure. Get your boarding pass instantly
+                                    and choose your boarding position.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Mobile Check-in:</strong>
+                                <p>Use the Southwest app for convenient mobile check-in. Receive push notifications and
+                                    digital boarding passes.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Airport Check-in:</strong>
+                                <p>Arrive early for airport kiosk or counter check-in. Available up to 45 minutes before
+                                    departure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boarding Process -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Boarding Process</h3>
+                        <p>Southwest uses a unique open seating system. Boarding groups are assigned based on check-in
+                            time and fare type.</p>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Boarding Groups:</strong>
+                                <p>Group A: Business Select and Anytime passengers</p>
+                                <p>Group B: Wanna Get Away Plus</p>
+                                <p>Group C: Wanna Get Away</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>EarlyBird Check-In:</strong>
+                                <p>Purchase EarlyBird for $30 to secure Group A boarding position.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Open Seating:</strong>
+                                <p>Choose any available seat once onboard. No assigned seats.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Onboard Amenities -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Onboard Amenities</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Complimentary Snacks & Drinks:</strong>
+                                <p>Enjoy free snacks like peanuts, pretzels, and non-alcoholic beverages.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Entertainment:</strong>
+                                <p>Free in-flight entertainment with movies, TV shows, and music.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Wi-Fi:</strong>
+                                <p>Available for purchase on most flights.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>USB Charging:</strong>
+                                <p>USB ports at every seat for device charging.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips for Check-in & Boarding -->
+                    <div class="tips-section">
+                        <h3 class="section-subtitle">Tips for Smooth Check-in & Boarding</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Check-in Early</h4>
+                                <p>Check in exactly 24 hours before departure to get the best boarding position.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Arrive on Time</h4>
+                                <p>Arrive at the airport 2 hours before domestic flights, 3 hours for international.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Have ID Ready</h4>
+                                <p>Bring a valid government-issued ID for check-in and security.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Pack Smart</h4>
+                                <p>Follow Southwest's 2 free checked bags policy and know the carry-on rules.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Use the App</h4>
+                                <p>Download the Southwest app for easy check-in and flight updates.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Call for Help</h4>
+                                <p>For assistance with check-in or boarding, call 1800-780-5923.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Check-in & Onboard FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cio-1">
+                                    <span>When can I check in for my Southwest flight?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cio-1" hidden>
+                                    <p>You can check in online starting 24 hours before your scheduled departure time.
+                                        Mobile check-in is available 24 hours before departure as well.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cio-2">
+                                    <span>What is Southwest's boarding process?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cio-2" hidden>
+                                    <p>Southwest uses a boarding group system: Group A boards first, followed by Group
+                                        B, then Group C. Within each group, passengers board in the order they checked
+                                        in.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cio-3">
+                                    <span>Does Southwest assign seats?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cio-3" hidden>
+                                    <p>No, Southwest does not assign seats. It's an open seating policy where you choose
+                                        any available seat once you're in your boarding group.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cio-4">
+                                    <span>What amenities are available onboard Southwest flights?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cio-4" hidden>
+                                    <p>Onboard amenities include complimentary snacks and non-alcoholic beverages, free
+                                        entertainment, USB charging ports, and Wi-Fi available for purchase.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cio-5">
+                                    <span>How early should I arrive at the airport for a Southwest flight?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cio-5" hidden>
+                                    <p>Arrive at least 2 hours before domestic flights and 3 hours before international
+                                        flights to allow time for check-in, security, and boarding.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Baggage Panel -->
+                <article class="topic-panel" id="topic-baggage" role="tabpanel" aria-labelledby="tab-baggage" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Baggage</h2>
+                        <p class="topic-description">Southwest Airlines offers generous baggage policies with two free
+                            checked bags for all passengers. Learn about baggage allowances, fees, and tips for a smooth
+                            travel experience.</p>
+                    </div>
+
+                    <!-- Baggage Information -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Baggage Allowances</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Free Checked Bags:</strong>
+                                <p>All passengers get 2 free checked bags (each up to 50 lbs and 62 linear inches).</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Cabin Baggage:</strong>
+                                <p>One free carry-on bag (fits under seat) plus one personal item (fits in overhead
+                                    bin).</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Overweight Bags:</strong>
+                                <p>Bags over 50 lbs incur a $75 fee per bag (up to 100 lbs maximum).</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Oversized Bags:</strong>
+                                <p>Bags over 62 linear inches incur a $75 fee per bag (up to 80 linear inches).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Baggage Fees -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Additional Baggage Fees</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>3rd Checked Bag:</strong>
+                                <p>$30 fee (online) or $40 at airport.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>4th+ Checked Bag:</strong>
+                                <p>$75 fee per additional bag.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Sports Equipment:</strong>
+                                <p>$75-$150 depending on equipment type.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Early Boarding:</strong>
+                                <p>$30 for EarlyBird Check-In to secure better overhead bin space.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips for Baggage -->
+                    <div class="tips-section">
+                        <h3 class="section-subtitle">Baggage Tips</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Pack Smart</h4>
+                                <p>Use the 2 free checked bags wisely. Pack essentials in carry-on for easy access.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Check Weight & Size</h4>
+                                <p>Weigh bags before arriving at airport. Southwest is strict about size limits.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Label Everything</h4>
+                                <p>Include contact info inside and outside bags. Use TSA-approved locks.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>EarlyBird Check-In</h4>
+                                <p>Purchase for $30 to board early and secure overhead bin space for carry-ons.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Track Your Bag</h4>
+                                <p>Use Southwest's bag tracking feature in the app to monitor your luggage.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Call for Help</h4>
+                                <p>For baggage questions or assistance, call 1800-780-5923.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Baggage FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-baggage-1">
+                                    <span>How many bags can I check for free on Southwest?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-baggage-1" hidden>
+                                    <p>Southwest allows all passengers to check 2 bags for free, each up to 50 pounds
+                                        and 62 linear inches. Additional bags incur fees starting at $30 for a third
+                                        bag.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-baggage-2">
+                                    <span>What are Southwest's carry-on rules?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-baggage-2" hidden>
+                                    <p>You can bring one carry-on bag that fits under the seat and one personal item
+                                        that fits in the overhead bin. Both are free, but space is first-come,
+                                        first-served.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-baggage-3">
+                                    <span>What happens if my bag is overweight?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-baggage-3" hidden>
+                                    <p>Bags over 50 pounds incur a $75 fee. The maximum weight allowed is 100 pounds.
+                                        Southwest recommends weighing bags at home to avoid surprises.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-baggage-4">
+                                    <span>Can I bring sports equipment on Southwest?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-baggage-4" hidden>
+                                    <p>Yes, but sports equipment counts as one of your free checked bags and may incur
+                                        additional fees depending on the type. Golf bags are $75, while skis/snowboards
+                                        are $50-$100.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-baggage-5">
+                                    <span>What should I do if my bag is lost or delayed?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-baggage-5" hidden>
+                                    <p>Report lost or delayed baggage immediately at the airport's Southwest baggage
+                                        service desk. You'll receive a Property Irregularity Report (PIR) and Southwest
+                                        will deliver your bag when located.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Unaccompanied Minor & Infant Panel -->
+                <article class="topic-panel" id="topic-unaccompanied-minor-infant" role="tabpanel"
+                    aria-labelledby="tab-unaccompanied-minor-infant" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Unaccompanied Minor & Infant</h2>
+                        <p class="topic-description">Southwest Airlines offers comprehensive policies for unaccompanied minors and infants, ensuring safe and comfortable travel for families. Learn about eligibility, fees, and requirements for traveling with children.</p>
+                    </div>
+
+                    <!-- Unaccompanied Minor Policy -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Southwest Airlines Unaccompanied Minor Policy</h3>
+                        <p>Southwest Airlines unaccompanied minor policy offers a comprehensive unaccompanied minor service for children aged 5-11 traveling alone. The policy is designed with safety and comfort in mind, ensuring parents can confidently book Southwest airfare tickets.</p>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Eligible Flights:</strong>
+                                <p>Unaccompanied minors are permitted on nonstop and direct flights, excluding itineraries with connections.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Service Fee:</strong>
+                                <p>A $50 fee each way is charged in addition to the low airfare Southwest tickets.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Parent/Guardian Requirements:</strong>
+                                <p>The child must be escorted to the departure gate and stay at the airport until the flight departs. Another authorized adult must meet the child at the arrival gate.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Identification and Boarding:</strong>
+                                <p>Children receive a special wristband for easy identification. Early boarding is allowed to ensure the child settles in before general boarding begins.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Documentation:</strong>
+                                <p>Parents/guardians must provide completed unaccompanied minor forms, valid identification, and emergency contact details.</p>
+                            </div>
+                        </div>
+                        <p>Fond Travels an IATA Accredited travel agency, helps parents secure their children's best Southwest Airlines airfares while ensuring a smooth process for unaccompanied minor bookings. Whether you're looking for low Southwest airfare deals, help with refundable flight tickets, or advice on travel guidelines, our team is here to help. Call us at +1 (323) 800 6001 for expert travel guidance and support with your next Southwest ticket deal!</p>
+                    </div>
+
+                    <!-- Infant Policy -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Southwest Infant Policy</h3>
+                        <p>Southwest Airlines' flexible travel options are available for families traveling with infants. Infants younger than two can travel as lap children or occupy a separate seat with an approved child restraint system (CRS).</p>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Lap Child Policy:</strong>
+                                <p>Infants under two years old may fly for free as lap children on domestic flights. A birth certificate or other proof of age is required. Only one lap infant is allowed per adult passenger.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Infant in Own Seat:</strong>
+                                <p>Parents can book a separate seat for their infant by purchasing a ticket. Approved child restraint systems (CRS), like car seats, are required for infants in their own seats.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>International Travel with Infants:</strong>
+                                <p>On international airlines, lap infants may be subject to fees and taxes. Check the fare and requirements for each destination.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Unaccompanied Minor & Infant FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-1">
+                                    <span>What is the age limit for unaccompanied minors?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-1" hidden>
+                                    <p>Children aged 5-11 years are eligible. Those 12-17 years are not considered unaccompanied minors but can travel alone without this service.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-2">
+                                    <span>Are snacks or meals provided for unaccompanied minors?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-2" hidden>
+                                    <p>Southwest offers complimentary beverages and snacks but only provides partial meals. It is recommended that you pack a light meal or snack.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-3">
+                                    <span>Can siblings travel as unaccompanied minors?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-3" hidden>
+                                    <p>Siblings within the eligible age range can travel together under one service fee.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-4">
+                                    <span>What documents are required for traveling with an infant?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-4" hidden>
+                                    <p>A government-issued birth certificate or hospital record is necessary for lap children to verify age.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-5">
+                                    <span>Can I carry a stroller or car seat for my infant?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-5" hidden>
+                                    <p>Yes, if a seat is purchased for the infant, strollers and car seats can be checked for free or brought onboard.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-6">
+                                    <span>Are there any baggage allowances for infants?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-6" hidden>
+                                    <p>Lap children do not have a baggage allowance, but parents can check a diaper bag as part of their carry-on.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-7">
+                                    <span>Is the unaccompanied minor service available on international flights?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-7" hidden>
+                                    <p>No, this service applies to domestic flights only. International airlines operated by Southwest do not support this policy.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-8">
+                                    <span>How can I modify a booking for an unaccompanied minor?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-8" hidden>
+                                    <p>For assistance with flight reservations, changes, or cancellations, contact us at Fond Travels for 24/7 support.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-9">
+                                    <span>Can unaccompanied minors sit anywhere on the plane?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-9" hidden>
+                                    <p>Unaccompanied minors are typically seated near the front of the aircraft so that flight attendants can monitor them throughout the flight.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-umi-10">
+                                    <span>Can a child with medical conditions travel as an unaccompanied minor?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-umi-10" hidden>
+                                    <p>Children with certain medical conditions may not qualify for this service. It is important to consult with Southwest Airlines before booking Southwest airfare tickets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
                 <!-- Classes & Seats Selection Panel -->
-                <article class="topic-panel" id="topic-classes-seats" role="tabpanel" aria-labelledby="tab-classes-seats" hidden>
+                <article class="topic-panel" id="topic-classes-seats" role="tabpanel"
+                    aria-labelledby="tab-classes-seats" hidden>
                     <div class="topic-header">
                         <h2 class="topic-title">Classes & Seats Selection</h2>
-                        <p class="topic-description">Discover Desttino's fare classes and choose the perfect option for your travel needs. Each class offers unique benefits, from budget-friendly options to premium perks, ensuring a comfortable and rewarding journey.</p>
+                        <p class="topic-description">Discover Desttino's fare classes and choose the perfect option for
+                            your travel needs. Each class offers unique benefits, from budget-friendly options to
+                            premium perks, ensuring a comfortable and rewarding journey.</p>
                     </div>
 
                     <!-- Fare Classes Information -->
                     <div class="info-grid">
                         <div class="info-card">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                             </svg>
                             <div class="info-content">
                                 <span class="info-label">Most Popular Class:</span>
@@ -1121,7 +1743,8 @@
                             </div>
                         </div>
                         <div class="info-card">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="M12 6v6l4 2" />
                             </svg>
@@ -1131,7 +1754,8 @@
                             </div>
                         </div>
                         <div class="info-card">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                                 <polyline points="14 2 14 8 20 8" />
                             </svg>
@@ -1141,7 +1765,8 @@
                             </div>
                         </div>
                         <div class="info-card">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
                                 <circle cx="9" cy="7" r="4" />
                                 <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
@@ -1159,19 +1784,23 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>Wanna Get Away:</strong>
-                                <p>Perfect for travelers on a tight budget. Earn 6 points per dollar with basic perks. Ideal for short trips where flexibility isn't a priority.</p>
+                                <p>Perfect for travelers on a tight budget. Earn 6 points per dollar with basic perks.
+                                    Ideal for short trips where flexibility isn't a priority.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Wanna Get Away Plus:</strong>
-                                <p>Our most popular choice balancing cost and convenience. 8 points per dollar, priority boarding, and same-day changes make it versatile for various travel scenarios.</p>
+                                <p>Our most popular choice balancing cost and convenience. 8 points per dollar, priority
+                                    boarding, and same-day changes make it versatile for various travel scenarios.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Anytime:</strong>
-                                <p>For flexible travelers needing full refunds and premium boarding. Earn 10 points per dollar with EarlyBird Check-In included.</p>
+                                <p>For flexible travelers needing full refunds and premium boarding. Earn 10 points per
+                                    dollar with EarlyBird Check-In included.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Business Select:</strong>
-                                <p>Luxury travel with 12 points per dollar, complimentary drinks, and free Wi-Fi. Designed for business professionals and those seeking premium service.</p>
+                                <p>Luxury travel with 12 points per dollar, complimentary drinks, and free Wi-Fi.
+                                    Designed for business professionals and those seeking premium service.</p>
                             </div>
                         </div>
                     </div>
@@ -1182,27 +1811,33 @@
                         <div class="tips-grid">
                             <div class="tip-card">
                                 <h4>Assess Your Travel Needs</h4>
-                                <p>Consider your trip length, flexibility requirements, and budget. If you're unsure about dates, opt for Anytime or Business Select for refundability.</p>
+                                <p>Consider your trip length, flexibility requirements, and budget. If you're unsure
+                                    about dates, opt for Anytime or Business Select for refundability.</p>
                             </div>
                             <div class="tip-card">
                                 <h4>Factor in Rewards Points</h4>
-                                <p>Higher fare classes earn more Desttino Rewards points. If you fly frequently, Business Select can help you accumulate points faster for future travel.</p>
+                                <p>Higher fare classes earn more Desttino Rewards points. If you fly frequently,
+                                    Business Select can help you accumulate points faster for future travel.</p>
                             </div>
                             <div class="tip-card">
                                 <h4>Check Additional Perks</h4>
-                                <p>Priority boarding and complimentary amenities in premium classes can enhance your travel experience, especially for longer flights.</p>
+                                <p>Priority boarding and complimentary amenities in premium classes can enhance your
+                                    travel experience, especially for longer flights.</p>
                             </div>
                             <div class="tip-card">
                                 <h4>Compare with Competitors</h4>
-                                <p>Desttino offers competitive pricing with no hidden fees. Compare our fare classes against other airlines to ensure you're getting the best value.</p>
+                                <p>Desttino offers competitive pricing with no hidden fees. Compare our fare classes
+                                    against other airlines to ensure you're getting the best value.</p>
                             </div>
                             <div class="tip-card">
                                 <h4>Book Early for Best Rates</h4>
-                                <p>Secure lower fares by booking in advance. Use our fare calendar to find the cheapest dates and lock in your preferred fare class.</p>
+                                <p>Secure lower fares by booking in advance. Use our fare calendar to find the cheapest
+                                    dates and lock in your preferred fare class.</p>
                             </div>
                             <div class="tip-card">
                                 <h4>Contact Our Experts</h4>
-                                <p>Call <a href="tel:+18007805923">1800-780-5923</a> for personalized recommendations. Our travel specialists can help you select the perfect fare class for your journey.</p>
+                                <p>Call 1800-780-5923 for personalized recommendations. Our travel specialists can help
+                                    you select the perfect fare class for your journey.</p>
                             </div>
                         </div>
                     </div>
@@ -1214,45 +1849,59 @@
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-1">
                                     <span>What is the difference between Desttino's Basic Economy and Main Cabin?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-classes-1" hidden>
-                                    <p>Basic Economy fares are the most restrictive option, with no seat selection, no changes or cancellations allowed, and boarding last. Main Cabin offers more flexibility, including the ability to select seats and make changes for a fee.</p>
+                                    <p>Basic Economy fares are the most restrictive option, with no seat selection, no
+                                        changes or cancellations allowed, and boarding last. Main Cabin offers more
+                                        flexibility, including the ability to select seats and make changes for a fee.
+                                    </p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-2">
                                     <span>Can I upgrade my fare class after booking?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-classes-2" hidden>
-                                    <p>Yes, fare upgrades are available at the airport or through our website/app, subject to availability and fare difference. Contact Desttino support at <a href="tel:+18007805923">1800-780-5923</a> for assistance with upgrades.</p>
+                                    <p>Yes, fare upgrades are available at the airport or through our website/app,
+                                        subject to availability and fare difference. Contact Desttino support at
+                                        1800-780-5923 for assistance with upgrades.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-3">
                                     <span>How do I earn and redeem Desttino Rewards points?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-classes-3" hidden>
-                                    <p>Points are earned based on your fare class and amount spent. Wanna Get Away earns 6 points per dollar, Wanna Get Away Plus earns 8, Anytime earns 10, and Business Select earns 12. Points can be redeemed for future flights, upgrades, or other travel benefits through your Desttino Rewards account.</p>
+                                    <p>Points are earned based on your fare class and amount spent. Wanna Get Away earns
+                                        6 points per dollar, Wanna Get Away Plus earns 8, Anytime earns 10, and Business
+                                        Select earns 12. Points can be redeemed for future flights, upgrades, or other
+                                        travel benefits through your Desttino Rewards account.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-classes-4">
                                     <span>Are there any restrictions on fare class changes?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-classes-4" hidden>
-                                    <p>Fare class changes are subject to availability and may incur fees. Wanna Get Away and Wanna Get Away Plus are non-refundable but can be changed for a fee. Anytime and Business Select offer more flexibility with full refunds available.</p>
+                                    <p>Fare class changes are subject to availability and may incur fees. Wanna Get Away
+                                        and Wanna Get Away Plus are non-refundable but can be changed for a fee. Anytime
+                                        and Business Select offer more flexibility with full refunds available.</p>
                                 </div>
                             </div>
                         </div>
@@ -1260,17 +1909,27 @@
                 </article>
 
                 <!-- Wanna Get Away Panel -->
-                <article class="topic-panel" id="topic-wanna-get-away" role="tabpanel" aria-labelledby="tab-wanna-get-away" hidden>
+                <article class="topic-panel" id="topic-wanna-get-away" role="tabpanel"
+                    aria-labelledby="tab-wanna-get-away" hidden>
                     <div class="topic-header">
                         <h2 class="topic-title">Wanna Get Away</h2>
-                        <p class="topic-description">Southwest Airlines is known for its budget-friendly choices, and one of its most popular fare choices is the Wanna Get Away ticket. It offers passengers affordable prices while still delivering Southwest's signature hospitality and flexibility. This is a fantastic option to save on airfare without sacrificing comfort.</p>
+                        <p class="topic-description">Southwest Airlines is known for its budget-friendly choices, and
+                            one of its most popular fare choices is the Wanna Get Away ticket. It offers passengers
+                            affordable prices while still delivering Southwest's signature hospitality and flexibility.
+                            This is a fantastic option to save on airfare without sacrificing comfort.</p>
                     </div>
 
                     <!-- What is a Wanna Get Away Ticket -->
                     <div class="insights-section">
                         <h3 class="section-subtitle">What is a Wanna Get Away Ticket?</h3>
-                        <p>The Wanna Get Away fare is Southwest's lowest-priced option for domestic flights. It's ideal for travelers who want a no-frills experience, with a seat selection based on when you check-in. Unlike many traditional airlines, Southwest doesn't assign seats in advance. Instead, you'll be placed in a boarding group (A, B, or C) based on your check-in time. Arriving early will improve your chances of snagging a prime seat.</p>
-                        <p>Southwest Wanna Get Away tickets are non-refundable, but you can cancel or change your flight for a small fee, making this fare option more flexible than others. Plus, it includes two free checked bags, a huge perk. For further queries, contact us at <a href="tel:+18007805923">1800-780-5923</a>.</p>
+                        <p>The Wanna Get Away fare is Southwest's lowest-priced option for domestic flights. It's ideal
+                            for travelers who want a no-frills experience, with a seat selection based on when you
+                            check-in. Unlike many traditional airlines, Southwest doesn't assign seats in advance.
+                            Instead, you'll be placed in a boarding group (A, B, or C) based on your check-in time.
+                            Arriving early will improve your chances of snagging a prime seat.</p>
+                        <p>Southwest Wanna Get Away tickets are non-refundable, but you can cancel or change your flight
+                            for a small fee, making this fare option more flexible than others. Plus, it includes two
+                            free checked bags, a huge perk. For further queries, contact us at 1800-780-5923.</p>
                     </div>
 
                     <!-- Perks -->
@@ -1279,15 +1938,18 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>Affordable Pricing:</strong>
-                                <p>Wanna Get Away fares are often the most budget-friendly option for domestic travel.</p>
+                                <p>Wanna Get Away fares are often the most budget-friendly option for domestic travel.
+                                </p>
                             </div>
                             <div class="insight-item">
                                 <strong>Free Bags:</strong>
-                                <p>Unlike many other low-cost carriers, Southwest allows two free checked bags, a great deal for travelers.</p>
+                                <p>Unlike many other low-cost carriers, Southwest allows two free checked bags, a great
+                                    deal for travelers.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>No Change Fees:</strong>
-                                <p>While a small fee applies for changes, there are no hefty change fees like other airlines charge.</p>
+                                <p>While a small fee applies for changes, there are no hefty change fees like other
+                                    airlines charge.</p>
                             </div>
                         </div>
                     </div>
@@ -1298,23 +1960,28 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>No Seat Selection:</strong>
-                                <p>Seats should be assigned in advance. Boarding is based on check-in time, so earlier check-ins offer better seating options.</p>
+                                <p>Seats should be assigned in advance. Boarding is based on check-in time, so earlier
+                                    check-ins offer better seating options.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Non-refundable:</strong>
-                                <p>Wanna Get Away tickets are non-refundable. If you cancel, you get travel credit minus fees.</p>
+                                <p>Wanna Get Away tickets are non-refundable. If you cancel, you get travel credit minus
+                                    fees.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>No Priority Boarding:</strong>
-                                <p>There is no priority boarding with this fare. To improve your boarding group, check in early or purchase EarlyBird Check-In.</p>
+                                <p>There is no priority boarding with this fare. To improve your boarding group, check
+                                    in early or purchase EarlyBird Check-In.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Limited to Domestic Routes:</strong>
-                                <p>Primarily for domestic flights, although some international routes are available. Check for destination availability before booking.</p>
+                                <p>Primarily for domestic flights, although some international routes are available.
+                                    Check for destination availability before booking.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>No Upgraded Amenities:</strong>
-                                <p>Wanna Get Away tickets do not include perks like priority seating, extra legroom, or first-class services.</p>
+                                <p>Wanna Get Away tickets do not include perks like priority seating, extra legroom, or
+                                    first-class services.</p>
                             </div>
                         </div>
                     </div>
@@ -1326,56 +1993,70 @@
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-1">
                                     <span>What is the Wanna Get Away fare?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wga-1" hidden>
-                                    <p>The Wanna Get Away fare is Southwest Airlines' most affordable option for domestic flights. It offers low prices with two free checked bags and flexible change policies, though seats are assigned based on check-in time.</p>
+                                    <p>The Wanna Get Away fare is Southwest Airlines' most affordable option for
+                                        domestic flights. It offers low prices with two free checked bags and flexible
+                                        change policies, though seats are assigned based on check-in time.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-2">
                                     <span>Can I choose my seat with Wanna Get Away?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wga-2" hidden>
-                                    <p>Southwest doesn't assign seats in advance. With Wanna Get Away, you'll be placed in a boarding group (A, B, or C) based on your check-in time. Earlier check-ins give you better chances for preferred seats.</p>
+                                    <p>Southwest doesn't assign seats in advance. With Wanna Get Away, you'll be placed
+                                        in a boarding group (A, B, or C) based on your check-in time. Earlier check-ins
+                                        give you better chances for preferred seats.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-3">
                                     <span>Are Wanna Get Away tickets refundable?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wga-3" hidden>
-                                    <p>Wanna Get Away tickets are non-refundable. If you cancel, you'll receive travel credit minus any applicable fees. Changes are allowed for a fee plus any fare difference.</p>
+                                    <p>Wanna Get Away tickets are non-refundable. If you cancel, you'll receive travel
+                                        credit minus any applicable fees. Changes are allowed for a fee plus any fare
+                                        difference.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-4">
                                     <span>How many bags are included with Wanna Get Away?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wga-4" hidden>
-                                    <p>Wanna Get Away includes two free checked bags per passenger, which is a great perk compared to many other budget airlines that charge for checked baggage.</p>
+                                    <p>Wanna Get Away includes two free checked bags per passenger, which is a great
+                                        perk compared to many other budget airlines that charge for checked baggage.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wga-5">
                                     <span>When should I book Wanna Get Away fares?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wga-5" hidden>
-                                    <p>Book Wanna Get Away fares as early as possible for the best prices. Southwest releases fares 24 hours at a time, so checking regularly and booking during sales can help you find the lowest rates.</p>
+                                    <p>Book Wanna Get Away fares as early as possible for the best prices. Southwest
+                                        releases fares 24 hours at a time, so checking regularly and booking during
+                                        sales can help you find the lowest rates.</p>
                                 </div>
                             </div>
                         </div>
@@ -1383,16 +2064,24 @@
                 </article>
 
                 <!-- Wanna Get Away Plus Panel -->
-                <article class="topic-panel" id="topic-wanna-get-away-plus" role="tabpanel" aria-labelledby="tab-wanna-get-away-plus" hidden>
+                <article class="topic-panel" id="topic-wanna-get-away-plus" role="tabpanel"
+                    aria-labelledby="tab-wanna-get-away-plus" hidden>
                     <div class="topic-header">
                         <h2 class="topic-title">Wanna Get Away Plus</h2>
-                        <p class="topic-description">Wanna Get Away Plus is an upgraded version of Southwest Airlines' popular Wanna Get Away fare. It offers more flexibility and perks, making it an excellent option for travelers who want more from their Southwest flight booking experience at <a href="tel:+18007805923">1800-780-5923</a> without paying for Business Select or First Class.</p>
+                        <p class="topic-description">Wanna Get Away Plus is an upgraded version of Southwest Airlines'
+                            popular Wanna Get Away fare. It offers more flexibility and perks, making it an excellent
+                            option for travelers who want more from their Southwest flight booking experience at
+                            1800-780-5923 without paying for Business Select or First Class.</p>
                     </div>
 
                     <!-- What is a Wanna Get Away Ticket -->
                     <div class="insights-section">
                         <h3 class="section-subtitle">What is a Wanna Get Away Ticket?</h3>
-                        <p>Wanna Get Away Plus fares offer all the great benefits of the regular Wanna Get Away ticket but with added perks. These include more flexibility when changing flights, a greater chance of securing A-list status, and priority boarding in some cases. It's ideal for those looking for budget-friendly travel but needing extra flexibility for their Southwest flight booking.</p>
+                        <p>Wanna Get Away Plus fares offer all the great benefits of the regular Wanna Get Away ticket
+                            but with added perks. These include more flexibility when changing flights, a greater chance
+                            of securing A-list status, and priority boarding in some cases. It's ideal for those looking
+                            for budget-friendly travel but needing extra flexibility for their Southwest flight booking.
+                        </p>
                     </div>
 
                     <!-- Perks -->
@@ -1401,23 +2090,29 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>Increased Flexibility :</strong>
-                                <p>Changes to flights are more manageable and often come without additional fees. If you rebook the same flight, this fare allows changes without paying the fare difference.</p>
+                                <p>Changes to flights are more manageable and often come without additional fees. If you
+                                    rebook the same flight, this fare allows changes without paying the fare difference.
+                                </p>
                             </div>
                             <div class="insight-item">
                                 <strong>Priority Boarding :</strong>
-                                <p>You may be eligible for priority boarding, helping you get better seating options.</p>
+                                <p>You may be eligible for priority boarding, helping you get better seating options.
+                                </p>
                             </div>
                             <div class="insight-item">
                                 <strong>A-List Qualification :</strong>
-                                <p>Wanna Get Away Plus fares help you earn A-list status faster, which gives you even more perks like priority check-in and boarding.</p>
+                                <p>Wanna Get Away Plus fares help you earn A-list status faster, which gives you even
+                                    more perks like priority check-in and boarding.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Free Bags :</strong>
-                                <p>Like the standard Wanna Get Away, you still get two free checked bags and one free carry-on bag.</p>
+                                <p>Like the standard Wanna Get Away, you still get two free checked bags and one free
+                                    carry-on bag.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Flexible Travel Credit :</strong>
-                                <p>The fare gives you more flexibility for credit without hefty fees if you need to cancel.</p>
+                                <p>The fare gives you more flexibility for credit without hefty fees if you need to
+                                    cancel.</p>
                             </div>
                         </div>
                     </div>
@@ -1428,23 +2123,28 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>No Assigned Seating :</strong>
-                                <p>Wanna Get Away Plus does not offer pre-assigned seating like other Southwest fares.</p>
+                                <p>Wanna Get Away Plus does not offer pre-assigned seating like other Southwest fares.
+                                </p>
                             </div>
                             <div class="insight-item">
                                 <strong>Higher Cost than Wanna Get Away :</strong>
-                                <p>While it offers added perks, Wanna Get Away Plus is more expensive than the standard fare.</p>
+                                <p>While it offers added perks, Wanna Get Away Plus is more expensive than the standard
+                                    fare.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Limited Availability :</strong>
-                                <p>Wanna Get Away Plus fares are only sometimes available on every route or flight, especially during peak travel. Availability is more limited.</p>
+                                <p>Wanna Get Away Plus fares are only sometimes available on every route or flight,
+                                    especially during peak travel. Availability is more limited.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>No First-Class Amenities :</strong>
-                                <p>Although it offers flexibility, Wanna Get Away Plus does not book First-Class flight amenities, such as extra legroom, upgraded meals, or premium seating.</p>
+                                <p>Although it offers flexibility, Wanna Get Away Plus does not book First-Class flight
+                                    amenities, such as extra legroom, upgraded meals, or premium seating.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Non-Refundable :</strong>
-                                <p>Like the standard Wanna Get Away fare, Wanna Get Away Plus tickets are non-refundable. While travel credits are more flexible</p>
+                                <p>Like the standard Wanna Get Away fare, Wanna Get Away Plus tickets are
+                                    non-refundable. While travel credits are more flexible</p>
                             </div>
                         </div>
                     </div>
@@ -1455,68 +2155,87 @@
                         <div class="accordion" role="region" aria-label="Wanna Get Away Plus FAQs">
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-1">
-                                    <span>How is Wanna Get Away Plus different from the regular Wanna Get Away fare?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <span>How is Wanna Get Away Plus different from the regular Wanna Get Away
+                                        fare?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wgap-1" hidden>
-                                    <p>Wanna Get Away Plus offers flexibility in southwest flight booking, including easier flight changes and additional perks like priority boarding and faster A-list qualification.</p>
+                                    <p>Wanna Get Away Plus offers flexibility in southwest flight booking, including
+                                        easier flight changes and additional perks like priority boarding and faster
+                                        A-list qualification.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-2">
                                     <span>Can I book a flight on Southwest Airlines using Wanna Get Away Plus?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wgap-2" hidden>
-                                    <p>You can secure a flight on Southwest Airlines using Wanna Get Away Plus. It provides a balance of savings and benefits, ideal for travelers seeking more flexibility at an affordable price.</p>
+                                    <p>You can secure a flight on Southwest Airlines using Wanna Get Away Plus. It
+                                        provides a balance of savings and benefits, ideal for travelers seeking more
+                                        flexibility at an affordable price.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-3">
                                     <span>How does Wanna Get Away Plus affect my Southwest flight booking?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wgap-3" hidden>
-                                    <p>With Wanna Get Away Plus, you can change your Southwest flight booking with fewer restrictions, and you're more likely to get A-list status benefits.</p>
+                                    <p>With Wanna Get Away Plus, you can change your Southwest flight booking with fewer
+                                        restrictions, and you're more likely to get A-list status benefits.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-4">
                                     <span>Does Wanna Get Away Plus include priority boarding?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wgap-4" hidden>
-                                    <p>Yes, one of the benefits of Wanna Get Away Plus is access to priority boarding, giving you a better chance of choosing your preferred seat.</p>
+                                    <p>Yes, one of the benefits of Wanna Get Away Plus is access to priority boarding,
+                                        giving you a better chance of choosing your preferred seat.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-5">
                                     <span>How can I find airline deals for Wanna Get Away Plus?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wgap-5" hidden>
-                                    <p>You can find airline deals by visiting Southwest's special promotions page, signing up for their email alerts, or booking during sales events. Keep an eye out for Southwest US Airlines discounts or call us at <a href="tel:+18007805923">1800-780-5923</a> for all flight bookings.</p>
+                                    <p>You can find airline deals by visiting Southwest's special promotions page,
+                                        signing up for their email alerts, or booking during sales events. Keep an eye
+                                        out for Southwest US Airlines discounts or call us at 1800-780-5923 for all
+                                        flight bookings.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-wgap-6">
                                     <span>Can I use reservations for Wanna Get Away Plus?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-wgap-6" hidden>
-                                    <p>Wanna Get Away Plus offers an enhanced experience for those who want more flexibility and benefits while booking with Southwest Airlines. Whether you're looking for added convenience, Southwest flight booking perks, or better seating, this option may be ideal for your next trip.</p>
+                                    <p>Wanna Get Away Plus offers an enhanced experience for those who want more
+                                        flexibility and benefits while booking with Southwest Airlines. Whether you're
+                                        looking for added convenience, Southwest flight booking perks, or better
+                                        seating, this option may be ideal for your next trip.</p>
                                 </div>
                             </div>
                         </div>
@@ -1527,14 +2246,25 @@
                 <article class="topic-panel" id="topic-anytime" role="tabpanel" aria-labelledby="tab-anytime" hidden>
                     <div class="topic-header">
                         <h2 class="topic-title">Anytime</h2>
-                        <p class="topic-description">The Anytime Fare with Southwest Airlines is an excellent choice if you're looking for ultimate flexibility. It's designed for travelers who want more freedom to change their plans without restrictions. Whether you need to make last-minute changes or secure priority boarding, Anytime Fare provides it all. Let's dive deeper into what makes this fare stand out and what limitations you should consider.</p>
+                        <p class="topic-description">The Anytime Fare with Southwest Airlines is an excellent choice if
+                            you're looking for ultimate flexibility. It's designed for travelers who want more freedom
+                            to change their plans without restrictions. Whether you need to make last-minute changes or
+                            secure priority boarding, Anytime Fare provides it all. Let's dive deeper into what makes
+                            this fare stand out and what limitations you should consider.</p>
                     </div>
 
                     <!-- What is the Anytime Fare -->
                     <div class="insights-section">
                         <h3 class="section-subtitle">What is the Anytime Fare?</h3>
-                        <p>The Anytime Fare is one of Southwest's premium options that offers maximum flexibility. Unlike Wanna Get Away or Wanna Get Away Plus, this fare allows you to change or cancel your flight without paying change fees. If you're booking Southwest Airlines tickets, it's the perfect choice for those with unpredictable schedules or business trips. You'll also enjoy more benefits, including priority boarding and a higher chance of earning Rapid Rewards points faster.</p>
-                        <p>The Anytime Fare provides access to all of Southwest's amenities, which is excellent for those traveling on business class flights or international routes and ensures a smoother travel experience.</p>
+                        <p>The Anytime Fare is one of Southwest's premium options that offers maximum flexibility.
+                            Unlike Wanna Get Away or Wanna Get Away Plus, this fare allows you to change or cancel your
+                            flight without paying change fees. If you're booking Southwest Airlines tickets, it's the
+                            perfect choice for those with unpredictable schedules or business trips. You'll also enjoy
+                            more benefits, including priority boarding and a higher chance of earning Rapid Rewards
+                            points faster.</p>
+                        <p>The Anytime Fare provides access to all of Southwest's amenities, which is excellent for
+                            those traveling on business class flights or international routes and ensures a smoother
+                            travel experience.</p>
                     </div>
 
                     <!-- Perks -->
@@ -1543,23 +2273,29 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>Flexible Flight Changes:</strong>
-                                <p>The Anytime Fare allows you to change or cancel your flight without paying a change price. You just pay any difference in fare if you book a more expensive flight.</p>
+                                <p>The Anytime Fare allows you to change or cancel your flight without paying a change
+                                    price. You just pay any difference in fare if you book a more expensive flight.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Priority Boarding:</strong>
-                                <p>With Anytime Fare, you receive priority boarding (Group A), giving you early access to select a seat. This is a huge perk compared to standard fare options.</p>
+                                <p>With Anytime Fare, you receive priority boarding (Group A), giving you early access
+                                    to select a seat. This is a huge perk compared to standard fare options.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Two Free Checked Bags:</strong>
-                                <p>Southwest remains one of the few airlines offering two free checked bags with every fare, and Anytime Fare is no exception. These perks can save you a considerable amount on your trip.</p>
+                                <p>Southwest remains one of the few airlines offering two free checked bags with every
+                                    fare, and Anytime Fare is no exception. These perks can save you a considerable
+                                    amount on your trip.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Earn Rapid Rewards Faster:</strong>
-                                <p>For those looking to rack up Rapid Rewards points, Anytime Fare gives you more points per flight, helping you reach Southwest Airlines reservations quicker.</p>
+                                <p>For those looking to rack up Rapid Rewards points, Anytime Fare gives you more points
+                                    per flight, helping you reach Southwest Airlines reservations quicker.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Full Refundability:</strong>
-                                <p>Anytime Fares are fully refundable if your plans change unexpectedly, unlike lower-tier fares offering travel credit or no refund.</p>
+                                <p>Anytime Fares are fully refundable if your plans change unexpectedly, unlike
+                                    lower-tier fares offering travel credit or no refund.</p>
                             </div>
                         </div>
                     </div>
@@ -1570,23 +2306,33 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>Higher Price:</strong>
-                                <p>The Anytime Fare is more expensive than Wanna Get Away or Wanna Get Away Plus tickets. The price reflects the added flexibility, but budget travelers may have more cost-effective choices.</p>
+                                <p>The Anytime Fare is more expensive than Wanna Get Away or Wanna Get Away Plus
+                                    tickets. The price reflects the added flexibility, but budget travelers may have
+                                    more cost-effective choices.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>No First-Class Seating:</strong>
-                                <p>While you'll get priority boarding and flexibility, Anytime Fare doesn't include First-Class seating. You'll need to consider other options for premium service or Southwest business class flights.</p>
+                                <p>While you'll get priority boarding and flexibility, Anytime Fare doesn't include
+                                    First-Class seating. You'll need to consider other options for premium service or
+                                    Southwest business class flights.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Limited to Certain Routes:</strong>
-                                <p>Anytime fares are available on most routes, but Southwest Air international flights may have more limited options, and availability may vary depending on the destination.</p>
+                                <p>Anytime fares are available on most routes, but Southwest Air international flights
+                                    may have more limited options, and availability may vary depending on the
+                                    destination.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Not Available on All Flights:</strong>
-                                <p>The Anytime Fare might not be available on some Southwest flights. It's more common on higher-demand or business routes, but you may need to check if it's available when making Southwest Airlines reservations.</p>
+                                <p>The Anytime Fare might not be available on some Southwest flights. It's more common
+                                    on higher-demand or business routes, but you may need to check if it's available
+                                    when making Southwest Airlines reservations.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>No Extra Perks for Upgrades:</strong>
-                                <p>While you get priority boarding and flexibility, Anytime Fare does not provide additional amenities such as lounge access or meals, which are typically associated with business or higher-tier fare classes.</p>
+                                <p>While you get priority boarding and flexibility, Anytime Fare does not provide
+                                    additional amenities such as lounge access or meals, which are typically associated
+                                    with business or higher-tier fare classes.</p>
                             </div>
                         </div>
                     </div>
@@ -1604,31 +2350,41 @@
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-anytime-1" hidden>
-                                    <p>The Anytime Fare offers more flexibility than the Wanna Get Away and Wanna Get Away Plus fares. You can change or cancel your flight without a fee, and you'll receive priority boarding, better Rapid Rewards points earning potential, and a full refund if needed.</p>
+                                    <p>The Anytime Fare offers more flexibility than the Wanna Get Away and Wanna Get
+                                        Away Plus fares. You can change or cancel your flight without a fee, and you'll
+                                        receive priority boarding, better Rapid Rewards points earning potential, and a
+                                        full refund if needed.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-2">
-                                    <span>Can I get Southwest Airlines tickets at the best price with the Anytime Fare?</span>
+                                    <span>Can I get Southwest Airlines tickets at the best price with the Anytime
+                                        Fare?</span>
                                     <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-anytime-2" hidden>
-                                    <p>While the Anytime Fare isn't the cheapest option, you get added value in flexibility and perks. If you need the ability to change flights at no extra cost, it's worth the investment, especially for frequent travelers looking for airline deals.</p>
+                                    <p>While the Anytime Fare isn't the cheapest option, you get added value in
+                                        flexibility and perks. If you need the ability to change flights at no extra
+                                        cost, it's worth the investment, especially for frequent travelers looking for
+                                        airline deals.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-3">
-                                    <span>Are there Southwest Air international flights available with the Anytime Fare?</span>
+                                    <span>Are there Southwest Air international flights available with the Anytime
+                                        Fare?</span>
                                     <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-anytime-3" hidden>
-                                    <p>The Anytime Fare is available on most domestic and Southwest Air international flights. However, availability may vary by route, and it's always good to check with Southwest Airlines reservations for specific international options.</p>
+                                    <p>The Anytime Fare is available on most domestic and Southwest Air international
+                                        flights. However, availability may vary by route, and it's always good to check
+                                        with Southwest Airlines reservations for specific international options.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -1640,31 +2396,39 @@
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-anytime-4" hidden>
-                                    <p>Yes, one of the key perks of the Anytime Fare is priority boarding. Passengers in this fare are placed in Group A for boarding, which allows you to choose your seat before most other passengers.</p>
+                                    <p>Yes, one of the key perks of the Anytime Fare is priority boarding. Passengers in
+                                        this fare are placed in Group A for boarding, which allows you to choose your
+                                        seat before most other passengers.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-5">
-                                    <span>Can I make changes to my flight if I book Southwest Airlines reservations with the Anytime Fare?</span>
+                                    <span>Can I make changes to my flight if I book Southwest Airlines reservations with
+                                        the Anytime Fare?</span>
                                     <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-anytime-5" hidden>
-                                    <p>Yes, the Anytime Fare allows you to change your flight without incurring change fees, making it ideal for those with flexible travel plans. You'll only pay for any fare difference if the new flight is more expensive.</p>
+                                    <p>Yes, the Anytime Fare allows you to change your flight without incurring change
+                                        fees, making it ideal for those with flexible travel plans. You'll only pay for
+                                        any fare difference if the new flight is more expensive.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-anytime-6">
-                                    <span>How do I reach Southwest Airlines Reservations' phone number for questions about Anytime Fare?</span>
+                                    <span>How do I reach Southwest Airlines Reservations' phone number for questions
+                                        about Anytime Fare?</span>
                                     <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-anytime-6" hidden>
-                                    <p>You can reach Southwest Airlines reservations phone number for assistance or call us at <a href="tel:+18007805923">1800-780-5923</a> for Anytime Fare bookings, changes, or any other inquiries.</p>
+                                    <p>You can reach Southwest Airlines reservations phone number for assistance or call
+                                        us at 1800-780-5923 for Anytime Fare bookings, changes, or any other inquiries.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1672,16 +2436,25 @@
                 </article>
 
                 <!-- Business Select Panel -->
-                <article class="topic-panel" id="topic-business-select" role="tabpanel" aria-labelledby="tab-business-select" hidden>
+                <article class="topic-panel" id="topic-business-select" role="tabpanel"
+                    aria-labelledby="tab-business-select" hidden>
                     <div class="topic-header">
                         <h2 class="topic-title">Business Select</h2>
-                        <p class="topic-description">If you're looking for extra comfort, flexibility, and convenience while flying with Desttino, Business Select is the way to go. This fare class is a step up from the standard economy options, offering a range of perks to make your travel experience more pleasant.</p>
+                        <p class="topic-description">If you're looking for extra comfort, flexibility, and convenience
+                            while flying with Desttino, Business Select is the way to go. This fare class is a step up
+                            from the standard economy options, offering a range of perks to make your travel experience
+                            more pleasant.</p>
                     </div>
 
                     <!-- What is Business Select -->
                     <div class="insights-section">
                         <h3 class="section-subtitle">What is Business Select?</h3>
-                        <p>Business Select is the Desttino premium economy class/fare. It is designed to provide travelers with higher service and comfort compared to standard economy options like Wanna Get Away or Wanna Get Away Plus. It's an excellent choice for those who want to experience added benefits, such as priority boarding, increased flexibility, and more rewards, without paying for traditional first-class tickets. Book your flight reservation hassle free with Desttino at <a href="tel:+18007805923">1800-780-5923</a>.</p>
+                        <p>Business Select is the Desttino premium economy class/fare. It is designed to provide
+                            travelers with higher service and comfort compared to standard economy options like Wanna
+                            Get Away or Wanna Get Away Plus. It's an excellent choice for those who want to experience
+                            added benefits, such as priority boarding, increased flexibility, and more rewards, without
+                            paying for traditional first-class tickets. Book your flight reservation hassle free with
+                            Desttino at 1800-780-5923.</p>
                     </div>
 
                     <!-- Perks -->
@@ -1690,23 +2463,35 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>Priority Boarding:</strong>
-                                <p>One of the standout perks of Business Select is priority boarding. You'll be among the first to board the plane, allowing you to secure your preferred seat (before groups B and C board). This is perfect for travelers who want to settle in quickly and get the best choice of seating.</p>
+                                <p>One of the standout perks of Business Select is priority boarding. You'll be among
+                                    the first to board the plane, allowing you to secure your preferred seat (before
+                                    groups B and C board). This is perfect for travelers who want to settle in quickly
+                                    and get the best choice of seating.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Bonus Desttino Rewards Points:</strong>
-                                <p>With Business Select, you earn extra Desttino Rewards points per flight. These bonus points help you earn free flights faster, making it an excellent option for frequent flyers looking to maximize their rewards.</p>
+                                <p>With Business Select, you earn extra Desttino Rewards points per flight. These bonus
+                                    points help you earn free flights faster, making it an excellent option for frequent
+                                    flyers looking to maximize their rewards.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Free Premium Drink:</strong>
-                                <p>Enjoy a complimentary premium drink during the flight, available to Business Select passengers. Whether it's a cocktail, wine, or beer, you can relax with a beverage as you soar through the skies.</p>
+                                <p>Enjoy a complimentary premium drink during the flight, available to Business Select
+                                    passengers. Whether it's a cocktail, wine, or beer, you can relax with a beverage as
+                                    you soar through the skies.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Refundable Ticket:</strong>
-                                <p>Unlike Wanna Get Away and Wanna Get Away Plus, Business Select fares are refundable. If your plans change, you can cancel your flight and get your money back through travel credit. This flexibility is perfect for travelers who need peace of mind with their Desttino reservations.</p>
+                                <p>Unlike Wanna Get Away and Wanna Get Away Plus, Business Select fares are refundable.
+                                    If your plans change, you can cancel your flight and get your money back through
+                                    travel credit. This flexibility is perfect for travelers who need peace of mind with
+                                    their Desttino reservations.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>EarlyBird Check-In Included:</strong>
-                                <p>Business Select passengers automatically get EarlyBird Check-In, ensuring they are checked 36 hours before departure. This means a higher likelihood of securing a top boarding position without manually checking in early.</p>
+                                <p>Business Select passengers automatically get EarlyBird Check-In, ensuring they are
+                                    checked 36 hours before departure. This means a higher likelihood of securing a top
+                                    boarding position without manually checking in early.</p>
                             </div>
                         </div>
                     </div>
@@ -1717,23 +2502,33 @@
                         <div class="insights-grid">
                             <div class="insight-item">
                                 <strong>No First-Class Cabin:</strong>
-                                <p>While Business Select offers premium perks, it does not provide a first-class cabin experience. The seats are still in the economy section, with no additional space or luxury seating like other airlines' First-Class options.</p>
+                                <p>While Business Select offers premium perks, it does not provide a first-class cabin
+                                    experience. The seats are still in the economy section, with no additional space or
+                                    luxury seating like other airlines' First-Class options.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>More Expensive:</strong>
-                                <p>Compared to the Wanna Get Away or Wanna Get Away Plus fares, Business Select is more expensive. This may only be ideal for budget-conscious travelers if the added perks are essential to them.</p>
+                                <p>Compared to the Wanna Get Away or Wanna Get Away Plus fares, Business Select is more
+                                    expensive. This may only be ideal for budget-conscious travelers if the added perks
+                                    are essential to them.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Limited Availability:</strong>
-                                <p>Business Select tickets may only sometimes be available on some flights, especially during high-demand travel periods. Availability can be limited, so booking early when looking for Desttino airfare deals is a good idea.</p>
+                                <p>Business Select tickets may only sometimes be available on some flights, especially
+                                    during high-demand travel periods. Availability can be limited, so booking early
+                                    when looking for Desttino airfare deals is a good idea.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Not Fully Refundable for Cash:</strong>
-                                <p>While Business Select tickets are refundable, if you need to cancel, you'll receive the refund in Desttino airfares or travel credit, not cash.</p>
+                                <p>While Business Select tickets are refundable, if you need to cancel, you'll receive
+                                    the refund in Desttino airfares or travel credit, not cash.</p>
                             </div>
                             <div class="insight-item">
                                 <strong>Still No Seat Assignments:</strong>
-                                <p>Like other Desttino tickets, Business Select does not offer pre-assigned seating. While you board early and have a higher chance of securing a great seat, it's still an open seating policy, so seating is on a first-come, first-served basis within your boarding group.</p>
+                                <p>Like other Desttino tickets, Business Select does not offer pre-assigned seating.
+                                    While you board early and have a higher chance of securing a great seat, it's still
+                                    an open seating policy, so seating is on a first-come, first-served basis within
+                                    your boarding group.</p>
                             </div>
                         </div>
                     </div>
@@ -1745,67 +2540,346 @@
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-1">
                                     <span>What makes Business Select different from regular Desttino fares?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-bs-1" hidden>
-                                    <p>Business Select offers priority boarding, extra Desttino Rewards points, a complimentary premium drink, EarlyBird Check-In, and flexibility to change or cancel your flight. It's perfect for those who want more comfort and convenience during their Desttino airfare experience.</p>
+                                    <p>Business Select offers priority boarding, extra Desttino Rewards points, a
+                                        complimentary premium drink, EarlyBird Check-In, and flexibility to change or
+                                        cancel your flight. It's perfect for those who want more comfort and convenience
+                                        during their Desttino airfare experience.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-2">
                                     <span>Can I use a Desttino reservation to book Business Select?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-bs-2" hidden>
-                                    <p>You can easily make Desttino reservations to book Business Select tickets through their website, mobile app, or by calling us at <a href="tel:+18007805923">1800-780-5923</a>.</p>
+                                    <p>You can easily make Desttino reservations to book Business Select tickets through
+                                        their website, mobile app, or by calling us at 1800-780-5923.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-3">
                                     <span>Are there any airline deals for Business Select tickets?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-bs-3" hidden>
-                                    <p>Yes, airline deals and special offers for Business Select tickets do pop up from time to time, especially during promotional periods. Signing up for the Desttino email list or checking their offers page is a good way to snag Desttino airfare deals.</p>
+                                    <p>Yes, airline deals and special offers for Business Select tickets do pop up from
+                                        time to time, especially during promotional periods. Signing up for the Desttino
+                                        email list or checking their offers page is a good way to snag Desttino airfare
+                                        deals.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-4">
                                     <span>How do I get the best Desttino airfare deals for Business Select?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-bs-4" hidden>
-                                    <p>To get the best Desttino airfare deals, book early, look for promotions, and watch Desttino's sales events. Desttino's Rewards program can also help you save money on future bookings.</p>
+                                    <p>To get the best Desttino airfare deals, book early, look for promotions, and
+                                        watch Desttino's sales events. Desttino's Rewards program can also help you save
+                                        money on future bookings.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-5">
                                     <span>Is Business Select worth the extra cost compared to Wanna Get Away?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-bs-5" hidden>
-                                    <p>If you value priority boarding, extra points, a complimentary drink, and the flexibility of a refundable ticket, Business Select is definitely worth the additional cost. It's ideal for travelers who need a little more comfort or those flying frequently with Desttino.</p>
+                                    <p>If you value priority boarding, extra points, a complimentary drink, and the
+                                        flexibility of a refundable ticket, Business Select is definitely worth the
+                                        additional cost. It's ideal for travelers who need a little more comfort or
+                                        those flying frequently with Desttino.</p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-header" aria-expanded="false" aria-controls="faq-bs-6">
                                     <span>Can I upgrade to Business Select after booking a regular ticket?</span>
-                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content" id="faq-bs-6" hidden>
-                                    <p>Yes, you can upgrade to Business Select after booking a standard fare by paying the fare difference. You can do this through your Desttino reservation or during check-in. Keep an eye on availability.</p>
+                                    <p>Yes, you can upgrade to Business Select after booking a standard fare by paying
+                                        the fare difference. You can do this through your Desttino reservation or during
+                                        check-in. Keep an eye on availability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cancellation & Refund Panel -->
+                <article class="topic-panel" id="topic-cancellation-refund" role="tabpanel"
+                    aria-labelledby="tab-cancellation-refund" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Cancellation & Refund</h2>
+                        <p class="topic-description">Southwest Airlines offers a flexible cancellation and refund policy to ensure travelers have a seamless experience. Learn about the different policies for various fare types and how to manage your bookings.</p>
+                    </div>
+
+                    <!-- Cancellation Policy -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Cancellation Policy</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>No Change Fees:</strong>
+                                <p>Southwest Airlines' cancellation policy doesn't charge fees to change or cancel flights, which is one of its main selling points.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Refundable Fares:</strong>
+                                <p>If you cancel a refundable ticket, you can receive a full refund using your actual payment method.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Non-Refundable Fares:</strong>
+                                <p>You won't receive a cash refund if you cancel a non-refundable ticket. However, you will be issued a travel fund that can be used for future travel with Southwest within one year of the original booking date.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>24-Hour Cancellation Policy:</strong>
+                                <p>Southwest allows you to cancel your flight within 24 hours of booking and receive a full refund, even for non-refundable fares, as long as the flight is booked at least 7 days in advance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Refund Policy -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Refund Policy</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Refundable Tickets:</strong>
+                                <p>Under Southwest's refund policy, if you cancel a refundable ticket, you will receive a full refund using your original method of payment.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Non-Refundable Tickets:</strong>
+                                <p>For non-refundable tickets, a Travel Fund will be issued for the value of the ticket. The fund is valid for one year from the original purchase date and can be used for future bookings under the same name.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Refunds to Original Payment Method:</strong>
+                                <p>If Southwest Airlines cancels your flight, you are entitled to a full refund to your original form of payment, regardless of the type of ticket purchased.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Refund Requests for Travel Funds:</strong>
+                                <p>If you don't use your Travel Fund within one year, you can contact Southwest Airlines to request a refund in your original form of payment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Travel Credits -->
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Travel Credits</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>Validity:</strong>
+                                <p>Travel credits are valid for one year from the purchase date.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Access:</strong>
+                                <p>Use the online airline management booking tool to apply credits to future flight reservations, or call us at 1800-780-5923, and we will do it for you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="accordion" role="region" aria-label="Cancellation & Refund FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cr-1">
+                                    <span>Can I cancel my flight on the day of departure?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cr-1" hidden>
+                                    <p>Yes, you can cancel a flight up to 10 minutes before departure without incurring a penalty. However, if you fail to cancel within this time, the funds may be forfeited for non-refundable fares. Refundable fares like Anytime and Business Select can request a refund even after the scheduled departure.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cr-2">
+                                    <span>What happens to my funds if I miss my flight?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cr-2" hidden>
+                                    <p>The funds are forfeited if you do not cancel a Wanna Get Away or other non-refundable fare. However, you can still request a refund after a no-show for refundable fares, such as Anytime or Business Select. It's always recommended to cancel in advance to secure travel credits or refunds.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cr-3">
+                                    <span>How can I use travel credits for future bookings?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cr-3" hidden>
+                                    <p>Travel credits are issued for eligible cancellations and remain valid for one year from the original purchase date. They can be accessed through Southwest's Manage Booking system. Use these credits during checkout to book a new flight for a seamless transaction.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cr-4">
+                                    <span>Are all fare types eligible for a refund?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cr-4" hidden>
+                                    <p>Not all fares are refundable. Wanna Get Away & Wanna Get Away Plus: Non-refundable but eligible for travel credits. Anytime Fare: Refundable as either travel credit or to the original payment method. Business Select: Refundable, offering flexibility to choose between cash refunds or travel credits.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-cr-5">
+                                    <span>Are there any airline deals for refundable or flexible tickets?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-cr-5" hidden>
+                                    <p>Yes, Southwest often offers airline deals on flexible fares, such as Anytime or Business Select. These fares include refund options such as travel credits or cash back to the original payment method. Call us at 1800-780-5923 for the latest deals and discounts on Southwest airfare tickets. Our team can help you secure low-airfare Southwest options with added benefits!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Flight Name & Date Change Panel -->
+                <article class="topic-panel" id="topic-flight-name-date-change" role="tabpanel"
+                    aria-labelledby="tab-flight-name-date-change" hidden>
+                    <div class="topic-header">
+                        <h2 class="topic-title">Flight Name & Date Change</h2>
+                        <p class="topic-description">Southwest Airlines offers flexibility in changing passenger names and travel dates, even for those who book business class or premium economy seats. While Southwest does not fly internationally, its flexible policy makes it easy to adjust international flight tickets when connecting with other international airlines.</p>
+                    </div>
+
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Southwest Flight Change Policy</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <strong>No Change Fees:</strong>
+                                <p>Under Southwest Airlines flight change policy, it does not charge change fees on any of its fares, whether you have booked through a Southwest airfare sale or purchased standard Southwest airfare tickets. Passengers can modify their booking without incurring additional charges, aside from any fare differences, making it easy to take advantage of Southwest airfare deals or adjust your plans if needed.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Fare Differences:</strong>
+                                <p>If your new flight has a higher fare than your original booking, you will be charged the difference. However, you'll receive credit for the difference if the new flight is priced lower—such as during a low airfare Southwest event. This credit can be used toward future travel with Southwest flights tickets, providing flexibility and value for passengers.</p>
+                            </div>
+                            <div class="insight-item">
+                                <strong>Same-Day Changes:</strong>
+                                <p>Southwest offers same-day flight changes, often without extra fees, provided seats are available on the new flight. This benefit applies across all fare types, allowing travelers to enjoy last-minute adjustments while still benefiting from Southwest ticket deals and Southwest cheap tickets.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="insights-section">
+                        <h3 class="section-subtitle">Southwest Name & Date Change</h3>
+                        <p>Under Southwest date change, airlines allows passengers to modify bookings without fees, though fare differences may apply. Minor changes (e.g., typos) can be made to name corrections by contacting us at 1800-780-5923 directly. This flexibility provides peace of mind, especially when booking international flight tickets or seeking last-minute adjustments on business class and premium economy bookings.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h3 class="faq-title">FAQs</h3>
+                        <div class="accordion" role="region" aria-label="Flight Name & Date Change FAQs">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-fndc-1">
+                                    <span>Does Southwest allow name changes?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-fndc-1" hidden>
+                                    <p>Southwest does not allow complete name changes on tickets, but minor corrections (such as spelling errors) are permitted. For assistance, contact Southwest Airlines reservation phone number.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-fndc-2">
+                                    <span>Can I change the date on my Southwest ticket?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-fndc-2" hidden>
+                                    <p>Yes, you can alter your flight date without incurring change fees. However, you must pay any difference in fare if applicable.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-fndc-3">
+                                    <span>Can you change your Southwest flight without penalty?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-fndc-3" hidden>
+                                    <p>Yes, Southwest allows flight changes without penalties. Fare differences may apply.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-fndc-4">
+                                    <span>Can a flight ticket name be changed?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-fndc-4" hidden>
+                                    <p>Most airlines, including Southwest, do not allow complete name changes. Corrections for typos or legal name updates may be possible.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-fndc-5">
+                                    <span>Can I change my flight to a different name?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-fndc-5" hidden>
+                                    <p>No, tickets are non-transferable, and names cannot be changed entirely. For help with airline ticket change or flight reservations, contact Fond Travels at 1800-780-5923.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-fndc-6">
+                                    <span>Can I book a flight and change the date?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-fndc-6" hidden>
+                                    <p>Yes, Southwest and many other airlines allow date changes, typically for a fee or fare difference. Airline deals on flexible tickets can reduce the cost of such changes.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false" aria-controls="faq-fndc-7">
+                                    <span>Can I change my name on a flight ticket with American Airlines?</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content" id="faq-fndc-7" hidden>
+                                    <p>American Airlines allows minor name corrections for typos but does not permit transferring a ticket to a new passenger.</p>
                                 </div>
                             </div>
                         </div>
@@ -1828,13 +2902,13 @@
                     </div>
                 </div>
                 <div class="promo-actions">
-                    <a href="tel:+18007805923" class="promo-cta promo-cta-primary">
+                    <a href="tel:18007805923" class="promo-cta promo-cta-primary">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
                             <path
                                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
-                        Call Now: <a href="tel:+18007805923">1800-780-5923</a>
+                        Call Now: 1800-780-5923
                     </a>
                     <a href="#search-form" class="promo-cta promo-cta-secondary">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1852,7 +2926,8 @@
     <!-- Disclaimer Section -->
     <section class="disclaimer-section">
         <div class="container">
-            <p class="disclaimer-text">Disclaimer : We are independent travel agents and are not directly affiliated, endorsed, authorized, or associated with any airline or its subsidiaries</p>
+            <p class="disclaimer-text">Disclaimer : We are independent travel agents and are not directly affiliated,
+                endorsed, authorized, or associated with any airline or its subsidiaries</p>
         </div>
     </section>
 
@@ -1885,7 +2960,7 @@
                             <li><a href="#name-change">Name Changes</a></li>
                             <li><a href="#baggage">Baggage Info</a></li>
                             <li><a href="#checkin">Check-in Help</a></li>
-                            <li><a href="tel:+18007805923">Contact Us</a></li>
+                            <li><a href="tel:18007805923">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -1939,7 +3014,7 @@
 
     <!-- Floating Mobile CTA - Redesigned -->
     <div class="mobile-cta" role="complementary" aria-label="Quick contact">
-        <a href="tel:+18007805923" class="mobile-cta-btn">
+        <a href="tel:18007805923" class="mobile-cta-btn">
             <div class="mobile-cta-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path
@@ -1956,7 +3031,7 @@
 
     <!-- Floating Desktop Call Button -->
     <button class="floating-cta" id="floating-cta" aria-label="Call for assistance"
-        onclick="window.location.href='tel:+18007805923'">
+        onclick="window.location.href='tel:18007805923'">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path
                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -1982,7 +3057,7 @@
                 <h3 id="promo-notification-title">Exclusive Phone Discount!</h3>
                 <p>Call now to unlock instant savings on your booking</p>
             </div>
-            <a href="tel:+18007805923" class="promo-notification-cta">
+            <a href="tel:18007805923" class="promo-notification-cta">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path
                         d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -1994,10 +3069,10 @@
 
     <script src="script.js"></script>
     <script>
-document.getElementById("from-city").addEventListener("focus", function () {
-    window.location.href = "https://desttino.com";
-});
-</script>
+        document.getElementById("from-city").addEventListener("focus", function () {
+            window.location.href = "https://desttino.com";
+        });
+    </script>
 
 </body>
 
