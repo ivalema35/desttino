@@ -108,9 +108,10 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
+    gap: 24px;
 }
 
 .hero-left {
@@ -154,6 +155,13 @@
     border: none;
     cursor: pointer;
 }
+
+/* Call Now Box inside Hero */
+.call-now-box{background:#fff;padding:22px;width:420px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.1);border-left:6px solid #0ca44a}
+.call-now-box .call-now-title{font-size:20px;font-weight:800;color:#0a3a2a}
+.call-now-box .call-now-sub{color:#374151;margin-top:6px}
+.call-now-box .call-actions{margin-top:12px}
+.call-now-box .call-number{color:#0a3a2a}
 
 /* Right Circle Offer */
 .circle-offer {
@@ -199,10 +207,22 @@
     max-width: 1250px;
     margin: auto;
     display: flex;
-    align-items: center;
-    gap: 14px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
     color: white;
+}
+
+.fs-top{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.fs-bottom{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
 }
 
 /* Trip Type Small Buttons */
@@ -212,7 +232,10 @@
     gap: 6px;
     font-size: 14px;
     font-weight: 600;
-    background: transparent;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
     color: white;
 }
 
@@ -224,6 +247,7 @@
     padding: 12px 14px;
     background: white;
     border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
 }
 
 .fs-field input,
@@ -234,6 +258,9 @@
     background: transparent;
     flex: 1;
 }
+
+.fs-field i{color:#0a3a2a;font-size:18px;margin-right:6px}
+.fs-field input[type="date"]{height:38px}
 
 .fs-field.large {
     width: 240px;
@@ -259,6 +286,32 @@
     background: #0b58cc;
 }
 
+.deal-popup-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;z-index:1000}
+.deal-popup-card{position:absolute;background:#0d1d4a;color:#fff;border-radius:10px;box-shadow:0 14px 30px rgba(0,0,0,.25);width:520px;overflow:hidden}
+.deal-popup-card::after{content:"";position:absolute;top:-12px;left:42px;border-width:12px;border-style:solid;border-color:transparent transparent #142a66 transparent}
+.deal-popup-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#142a66}
+.deal-popup-title{font-weight:800}
+.deal-popup-close{background:transparent;border:none;color:#fff;font-size:20px;cursor:pointer}
+.deal-popup-image{height:120px;background-size:cover;background-position:center}
+.deal-popup-body{padding:16px;background:#0d1d4a}
+.deal-popup-row{display:flex;gap:12px;margin-bottom:12px}
+.deal-popup-field{flex:1;display:flex;align-items:center;gap:8px;background:#fff;color:#111827;border-radius:8px;padding:10px 12px}
+.deal-popup-field input,.deal-popup-field select{border:none;outline:none;background:transparent;flex:1}
+.deal-popup-trip{display:flex;gap:12px;margin-bottom:12px}
+.deal-popup-trip label{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:8px 12px}
+.deal-popup-search{width:100%;padding:12px 18px;background:#1e73f8;border:none;border-radius:8px;color:#fff;font-weight:800;cursor:pointer}
+.deal-card{cursor:pointer}
+.no-scroll{overflow:hidden}
+
+.call-now-section{background:#0a3a2a;color:#fff;margin-top:30px;padding:28px 0}
+.call-now-inner{max-width:1200px;margin:auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.call-now-title{font-size:22px;font-weight:800}
+.call-now-sub{color:#cbd5e1}
+.call-number{font-size:28px;font-weight:900;color:#fff;text-decoration:none}
+.call-actions{display:flex;gap:10px;align-items:center}
+.call-btn{padding:12px 18px;border-radius:8px;background:#0ca44a;color:#fff;font-weight:700;border:none}
+.call-pill{padding:10px 14px;border-radius:999px;background:#1f2937;color:#cbd5e1;font-weight:700}
+
 </style>
 
 </style>
@@ -271,6 +324,7 @@
     .hero-content-wrapper{flex-direction:column;gap:18px;align-items:flex-start}
     .hero-left{max-width:100%}
     .subscribe-box{width:100%}
+    .call-now-box{width:100%}
     .circle-offer{width:220px;height:220px;padding:40px 16px;font-size:18px}
     .hero-plane img{right:4%;top:160px;width:300px}
     .flight-search-strip{margin-top:0;padding:16px 0}
@@ -285,6 +339,9 @@
     .deal-card{flex-direction:column;align-items:flex-start}
     .deal-right{text-align:left;margin-top:8px}
     .newsletter-top{flex-direction:column;align-items:flex-start}
+    .call-now-inner{flex-direction:column;align-items:flex-start}
+    .call-number{font-size:24px}
+    .call-actions{width:100%;gap:8px;flex-wrap:wrap}
 }
 @media (max-width: 480px){
     .hero{padding:32px 0}
@@ -314,21 +371,11 @@
     <div class="hero-content-wrapper">
         <div class="hero-left">
             <h1 class="hero-title">Frontier Airlines Flight Booking</h1>
-
-            <div class="subscribe-box">
-                <p>Subscribe & get up to $10 off. Now!</p>
-                <div class="subscribe-row">
-                    <input type="email" placeholder="E-mail Address">
-                    <button>Get Promo</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="hero-right">
-            <div class="circle-offer">
-                <p>Zero Hassles<br>Guaranteed with<br>Booking Flexibility<br>and No Change Fee<br>on Selected Fares</p>
-                <div class="circle-icon">
-                    <i class="fa-solid fa-chevron-down"></i>
+            <div class="call-now-box">
+                <div class="call-now-title">Need help booking Frontier flights?</div>
+                <div class="call-now-sub">Talk to our travel experts for best fares and support.</div>
+                <div class="call-actions">
+                    <a href="tel:18007805923" class="call-number">1800-780-5923</a>
                 </div>
             </div>
         </div>
@@ -340,53 +387,48 @@
 </section>
 <div class="flight-search-strip">
     <div class="fs-inner">
-        
-        <label class="fs-item">
-            <input type="radio" name="trip" checked>
-            Round trip
-        </label>
-
-        <label class="fs-item">
-            <input type="radio" name="trip">
-            Oneway
-        </label>
-
-        <div class="fs-field large">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Ahmedabad(AMD), India">
+        <div class="fs-top">
+            <label class="fs-item">
+                <input type="radio" name="trip" value="round">
+                Round trip
+            </label>
+            <label class="fs-item">
+                <input type="radio" name="trip" value="oneway" checked>
+                Oneway
+            </label>
         </div>
-
-        <div class="fs-field large">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Fort Lauderdale(FLL), USA">
+        <div class="fs-bottom">
+            <div class="fs-field large">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Ahmedabad(AMD), India">
+            </div>
+            <div class="fs-field large">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Fort Lauderdale(FLL), USA">
+            </div>
+            <div class="fs-field small" id="departField">
+                <i class="fa-solid fa-calendar"></i>
+                <input type="date">
+            </div>
+            <div class="fs-field small" id="returnField">
+                <i class="fa-solid fa-calendar"></i>
+                <input type="date">
+            </div>
+            <div class="fs-field small">
+                <i class="fa-solid fa-user"></i>
+                <select>
+                    <option>1 Traveler</option>
+                    <option>2 Travelers</option>
+                </select>
+            </div>
+            <div class="fs-field small">
+                <select>
+                    <option>Economy</option>
+                    <option>Premium</option>
+                </select>
+            </div>
+            <button class="fs-search-btn">Search</button>
         </div>
-
-        <div class="fs-field small">
-            <i class="fa-solid fa-calendar"></i>
-            <input type="date">
-        </div>
-
-        <div class="fs-field small">
-            <i class="fa-solid fa-calendar"></i>
-            <input type="date">
-        </div>
-
-        <div class="fs-field small">
-            <i class="fa-solid fa-user"></i>
-            <select>
-                <option>1 Traveler</option>
-                <option>2 Travelers</option>
-            </select>
-        </div>
-
-        <div class="fs-field small">
-            <select>
-                <option>Economy</option>
-                <option>Premium</option>
-            </select>
-        </div>
-
-        <button class="fs-search-btn">Search</button>
     </div>
 </div>
 
@@ -490,6 +532,46 @@
         <div class="fares-note">*Note: All fares are quoted in USD.</div>
         <div class="fares-update">Last updated on Monday 12/01/2025 at 05:00 AM. Fares include taxes and fees and may change without notice. See terms and conditions before booking.</div>
     </section>
+
+    <div id="dealPopup" class="deal-popup-overlay" aria-hidden="true">
+        <div class="deal-popup-card" role="dialog" aria-modal="true">
+            <div class="deal-popup-header">
+                <div class="deal-popup-title">Flight Details</div>
+                <button class="deal-popup-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="deal-popup-image" id="dealPopupImg"></div>
+            <div class="deal-popup-body">
+                <div class="deal-popup-trip">
+                    <label><input type="radio" name="dealTrip" value="round" checked> Round trip</label>
+                    <label><input type="radio" name="dealTrip" value="oneway"> Oneway</label>
+                </div>
+                <div class="deal-popup-row">
+                    <div class="deal-popup-field"><i class="fa-solid fa-location-dot"></i><input id="dealFrom" type="text" placeholder="From"></div>
+                    <div class="deal-popup-field"><i class="fa-solid fa-location-dot"></i><input id="dealTo" type="text" placeholder="To"></div>
+                </div>
+                <div class="deal-popup-row">
+                    <div class="deal-popup-field"><i class="fa-solid fa-calendar"></i><input id="dealDepart" type="date"></div>
+                    <div class="deal-popup-field" id="dealReturnWrap"><i class="fa-solid fa-calendar"></i><input id="dealReturn" type="date"></div>
+                </div>
+                <div class="deal-popup-row">
+                    <div class="deal-popup-field"><i class="fa-solid fa-user"></i>
+                        <select id="dealTrav">
+                            <option>1 Traveler</option>
+                            <option>2 Travelers</option>
+                            <option>3 Travelers</option>
+                        </select>
+                    </div>
+                    <div class="deal-popup-field">
+                        <select id="dealCabin">
+                            <option>Economy</option>
+                            <option>Premium</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="deal-popup-search">Search</button>
+            </div>
+        </div>
+    </div>
 
     <section class="content-section" id="frontier-content">
         <h2 class="section-title">Exclusive Frontier Airlines (F9) Deals & Reservations</h2>
@@ -612,7 +694,43 @@
         function scrollByAmount(dir){if(!strip)return;strip.scrollBy({left:dir*300,behavior:'smooth'});} 
         prev&&prev.addEventListener('click',()=>scrollByAmount(-1));
         next&&next.addEventListener('click',()=>scrollByAmount(1));
+        const round=document.querySelector('input[name="trip"][value="round"]');
+        const oneway=document.querySelector('input[name="trip"][value="oneway"]');
+        const returnField=document.getElementById('returnField');
+        function updateTrip(){if(!returnField)return;returnField.style.display=(round&&round.checked)?'flex':'none'}
+        round&&round.addEventListener('change',updateTrip);
+        oneway&&oneway.addEventListener('change',updateTrip);
+        updateTrip();
+
+        const popup=document.getElementById('dealPopup');
+        const popupCard=popup?popup.querySelector('.deal-popup-card'):null;
+        const popupClose=popup?popup.querySelector('.deal-popup-close'):null;
+        const popupImg=document.getElementById('dealPopupImg');
+        const dealFrom=document.getElementById('dealFrom');
+        const dealTo=document.getElementById('dealTo');
+        const dealDepart=document.getElementById('dealDepart');
+        const dealReturn=document.getElementById('dealReturn');
+        const dealReturnWrap=document.getElementById('dealReturnWrap');
+        const dealTripRound=popup?popup.querySelector('input[name="dealTrip"][value="round"]'):null;
+        const dealTripOne=popup?popup.querySelector('input[name="dealTrip"][value="oneway"]'):null;
+
+        function setPopupPosition(rect){if(!popupCard)return;const margin=10;let top=rect.top+margin;let left=rect.left+margin;const vw=window.innerWidth;const vh=window.innerHeight;const cardW=520;const cardH=340;left=Math.min(Math.max(margin,left),vw-cardW-margin);top=Math.min(Math.max(margin,top),vh-cardH-margin);popupCard.style.top=top+'px';popupCard.style.left=left+'px'}
+        function parseDate(str){const d=new Date(str);if(isNaN(d))return '';const iso=d.toISOString().slice(0,10);return iso}
+        function openDealPopup(card){try{if(!popup||!popupCard)return;const dates=card.querySelector('.deal-dates');const route=card.querySelector('.deal-route');const blocks=route?route.children:[];let fromCity='',toCity='';if(blocks&&blocks.length>=3){const fromBlock=blocks[0];const toBlock=blocks[2];const fromPlace=fromBlock.querySelector('.deal-place');const toPlace=toBlock.querySelector('.deal-place');fromCity=fromPlace?fromPlace.textContent.trim():'';toCity=toPlace?toPlace.textContent.trim():''}
+            if(dealFrom)dealFrom.value=fromCity||'';if(dealTo)dealTo.value=toCity||'';if(dates){const parts=dates.textContent.split('-');if(parts.length===2){const dep=parseDate(parts[0].trim());const ret=parseDate(parts[1].trim());if(dep)dealDepart&&(dealDepart.value=dep);if(ret)dealReturn&&(dealReturn.value=ret)}}
+            const titleEl=popup.querySelector('.deal-popup-title');if(titleEl)titleEl.textContent=`Flight ${fromCity||''} To ${toCity||''}`.trim();
+            const typeEl=card.querySelector('.deal-type');const isRound=typeEl&&/round/i.test(typeEl.textContent);if(isRound){dealTripRound&&(dealTripRound.checked=true);dealReturnWrap&&(dealReturnWrap.style.display='flex')}else{dealTripOne&&(dealTripOne.checked=true);dealReturnWrap&&(dealReturnWrap.style.display='none')}
+            if(popupImg)popupImg.style.backgroundImage="url('/img/frontier-airlines-f9.jpg')";
+            popup.style.display='block';setPopupPosition(card.getBoundingClientRect());
+            document.body.classList.add('no-scroll');
+        }catch(e){console&&console.error&&console.error('Deal popup error',e)}}
+        function closeDealPopup(){if(!popup)return;popup.style.display='none';document.body.classList.remove('no-scroll')}
+        popupClose&&popupClose.addEventListener('click',closeDealPopup);
+        popup&&popup.addEventListener('click',e=>{if(e.target===popup)closeDealPopup()});
+        const cards=document.querySelectorAll('.deal-card');cards.forEach(c=>c.addEventListener('click',()=>openDealPopup(c)));
+        function updateDealTrip(){if(!dealReturnWrap)return;dealReturnWrap.style.display=(dealTripRound&&dealTripRound.checked)?'flex':'none'}
+        dealTripRound&&dealTripRound.addEventListener('change',updateDealTrip);
+        dealTripOne&&dealTripOne.addEventListener('change',updateDealTrip);
     </script>
 </body>
 </html>
-
