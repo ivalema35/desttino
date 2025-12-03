@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit Airlines Flight Deals | Desttino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body{font-family:'Inter',sans-serif;color:#111827;background:#fff;margin:0;padding:0}
+        .container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+        .header{position:sticky;top:0;background:#0a2540;color:#fff;z-index:100}
+        .header-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+        .logo-img{height:45px;width:auto;border-radius:6px}
+        .header-right{display:flex;align-items:center;gap:16px}
+        .support-info{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+        .support-text{font-size:12px;color:#cbd5e1}
+        .phone-link{color:#3b82f6;text-decoration:none;font-weight:700}
+        .phone-link:hover{color:#ffffff}
+
+        .hero-new{position:relative;width:100%;padding:80px 20px 200px;overflow:hidden;background:linear-gradient(135deg,#3aa9ff,#cfeaff)}
+        .hero-bg-img{position:absolute;inset:0;background:url('img/sky.jpg') center/cover no-repeat;opacity:0.35}
+        .hero-content-wrapper{max-width:1200px;margin:auto;display:flex;justify-content:flex-start;align-items:center;position:relative;gap:24px}
+        .hero-left{max-width:50%}
+        .hero-title{font-size:42px;font-weight:700;margin-bottom:20px;color:#00396f}
+        .call-now-box{background:#fff;padding:22px;width:420px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.1);border-left:6px solid #0ca44a}
+        .call-now-box .call-now-title{font-size:20px;font-weight:800;color:#0a3a2a}
+        .call-now-box .call-now-sub{color:#374151;margin-top:6px}
+        .call-now-box .call-actions{margin-top:12px}
+        .call-now-box .call-number{font-size:28px;font-weight:900;color:#0a3a2a;text-decoration:none}
+        .hero-plane img{position:absolute;right:22%;top:180px;width:520px}
+
+        .flight-search-strip{background:#0d1d4a;padding:20px 0;margin-top:-60px;position:relative;z-index:10}
+        .fs-inner{max-width:1250px;margin:auto;display:flex;flex-direction:column;gap:12px;color:white;padding:0 20px}
+        .fs-top{display:flex;align-items:center;gap:12px}
+        .fs-bottom{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+        .fs-item{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:8px 12px;color:white}
+        .fs-field{display:flex;align-items:center;gap:8px;padding:12px 14px;background:white;border-radius:8px;border:1px solid rgba(0,0,0,0.08)}
+        .fs-field input,.fs-field select{border:none;outline:none;font-size:15px;background:transparent;flex:1}
+        .fs-field i{color:#0a3a2a;font-size:18px;margin-right:6px}
+        .fs-field input[type="date"]{height:38px}
+        .fs-field.large{width:240px}
+        .fs-field.small{width:150px}
+        .fs-search-btn{background:#1e73f8;padding:12px 22px;border-radius:8px;border:none;font-size:16px;color:white;cursor:pointer;font-weight:700}
+        .fs-search-btn:hover{background:#0b58cc}
+
+        .fares-section{max-width:1200px;margin:40px auto;padding:0 20px}
+        .fares-header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+        .fares-title{font-size:28px;font-weight:700;color:#1f2937}
+        .fares-sub{color:#4b5563;margin-bottom:20px}
+        .fares-grid{display:grid;grid-template-columns:1fr;gap:18px}
+        @media(min-width:1024px){.fares-grid{grid-template-columns:1fr 1fr}}
+        .deal-card{background:#fff;border:1px dashed #d1d5db;border-radius:12px;padding:16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 1px 2px rgba(0,0,0,.04);cursor:pointer}
+        .deal-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.1)}
+        .deal-left{display:flex;flex-direction:column;gap:8px}
+        .deal-dates{font-weight:600;color:#374151;font-size:14px}
+        .deal-route{display:flex;align-items:center;gap:10px;font-weight:700;color:#111827}
+        .deal-route>div{display:flex;flex-direction:column}
+        .deal-route>div>div:first-child{font-size:20px}
+        .deal-place{font-size:12px;color:#6b7280;font-weight:400}
+        .route-icon{height:20px;width:120px;background:linear-gradient(90deg,#9ca3af 40%, transparent 0),linear-gradient(90deg,#9ca3af 40%, transparent 0);background-size:8px 2px;opacity:.7}
+        .deal-right{text-align:right}
+        .deal-type{color:#6b7280;font-weight:600;font-size:13px}
+        .deal-price{color:#10b981;font-size:24px;font-weight:800}
+        .fares-note{font-size:12px;color:#ef4444;margin-top:10px}
+        .fares-update{font-size:12px;color:#6b7280;margin-top:6px}
+
+        .content-section{max-width:1000px;margin:40px auto;padding:0 20px}
+        .section-title{font-size:26px;font-weight:700;color:#111827;margin-bottom:10px}
+        .section-subtitle{font-size:20px;font-weight:600;color:#1f2937;margin:16px 0 8px}
+        .section-text{color:#374151;line-height:1.6;margin-bottom:12px}
+        .bullet-list{margin:10px 0 0 18px;color:#374151;line-height:1.6}
+
+        .airlines-section{max-width:1200px;margin:30px auto;padding:0 20px}
+        .airlines-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+        .airlines-title{font-size:22px;font-weight:700;color:#1f2937}
+        .airlines-strip{display:grid;grid-auto-flow:column;grid-auto-columns:260px;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+        .airline-card{scroll-snap-align:start;background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s}
+        .airline-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,.1)}
+        .airline-card a{text-decoration:none;color:inherit;display:block}
+        .airline-img{width:100%;height:140px;object-fit:cover;display:block}
+        .airline-name{padding:12px;font-weight:600;color:#111827}
+        .airline-nav{display:flex;gap:8px}
+        .airline-btn{border:1px solid #d1d5db;background:#fff;color:#374151;border-radius:999px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+
+        .newsletter-section{background:#0a2540;color:#fff;margin-top:30px}
+        .newsletter-inner{max-width:1200px;margin:auto;padding:24px 20px}
+        .newsletter-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+        .newsletter-title{font-size:20px;font-weight:700}
+        .newsletter-sub{color:#cbd5e1}
+        .newsletter-form{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+        .newsletter-input,.newsletter-select{padding:10px 12px;border-radius:8px;border:1px solid #cbd5e1;background:#fff;color:#111827}
+        .newsletter-btn{padding:10px 16px;border-radius:8px;background:#f97316;color:#fff;font-weight:700;border:none;cursor:pointer}
+        .links-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+        .links-col{display:flex;flex-direction:column;gap:6px}
+        .links-title{font-weight:700}
+        .links-col a{color:#cbd5e1;text-decoration:none}
+        .links-col a:hover{color:#fff}
+        .social-row{display:flex;gap:10px;margin-top:12px}
+        .social-icon{width:34px;height:34px;border-radius:8px;background:#1f2937;display:flex;align-items:center;justify-content:center;cursor:pointer}
+        .social-icon:hover{background:#374151}
+
+        .deal-popup-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;z-index:1000}
+        .deal-popup-card{position:absolute;background:#0d1d4a;color:#fff;border-radius:10px;box-shadow:0 14px 30px rgba(0,0,0,.25);width:520px;overflow:hidden}
+        .deal-popup-card::after{content:"";position:absolute;top:-12px;left:42px;border-width:12px;border-style:solid;border-color:transparent transparent #142a66 transparent}
+        .deal-popup-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#142a66}
+        .deal-popup-title{font-weight:800}
+        .deal-popup-close{background:transparent;border:none;color:#fff;font-size:20px;cursor:pointer}
+        .deal-popup-image{height:120px;background-size:cover;background-position:center}
+        .deal-popup-body{padding:16px;background:#0d1d4a}
+        .deal-popup-row{display:flex;gap:12px;margin-bottom:12px}
+        .deal-popup-field{flex:1;display:flex;align-items:center;gap:8px;background:#fff;color:#111827;border-radius:8px;padding:10px 12px}
+        .deal-popup-field input,.deal-popup-field select{border:none;outline:none;background:transparent;flex:1}
+        .deal-popup-trip{display:flex;gap:12px;margin-bottom:12px}
+        .deal-popup-trip label{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:8px 12px;cursor:pointer}
+        .deal-popup-search{width:100%;padding:12px 18px;background:#1e73f8;border:none;border-radius:8px;color:#fff;font-weight:800;cursor:pointer}
+        .no-scroll{overflow:hidden}
+
+        @media (max-width: 768px){
+            .hero-new{padding:48px 16px 140px}
+            .hero-content-wrapper{flex-direction:column;gap:18px;align-items:flex-start}
+            .hero-left{max-width:100%}
+            .hero-title{font-size:28px}
+            .call-now-box{width:100%}
+            .hero-plane img{right:4%;top:160px;width:300px}
+            .flight-search-strip{margin-top:0;padding:16px 0}
+            .fs-inner{gap:12px}
+            .fs-field.large{width:100%}
+            .fs-field.small{flex:1;min-width:calc(50% - 10px)}
+            .fs-search-btn{width:100%}
+            .airlines-strip{grid-auto-columns:180px}
+            .airline-img{height:110px}
+            .airline-nav{display:none}
+            .fares-header{flex-direction:column;align-items:flex-start}
+            .deal-card{flex-direction:column;align-items:flex-start}
+            .deal-right{text-align:left;margin-top:8px}
+            .newsletter-top{flex-direction:column;align-items:flex-start}
+            .links-grid{grid-template-columns:repeat(2,1fr)}
+            .deal-popup-card{width:90%;left:5%!important;top:50%!important;transform:translateY(-50%)}
+        }
+        @media (max-width: 600px){
+            .links-grid{grid-template-columns:1fr}
+        }
+        @media (max-width: 480px){
+            .fares-title{font-size:22px}
+            .airlines-title{font-size:18px}
+            .hero-title{font-size:24px}
+        }
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="Desttino Home">
+                <img src="img/logo.jpg" alt="Desttino Logo" class="logo-img">
+            </a>
+            <div class="header-right">
+                <div class="support-info">
+                    <span class="support-text">24/7 Support Available</span>
+                    <a href="tel:18007805923" class="phone-link">1800-780-5923</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-new">
+        <div class="hero-bg-img"></div>
+        <div class="hero-content-wrapper">
+            <div class="hero-left">
+                <h1 class="hero-title">Spirit Airlines Flight Booking</h1>
+                <div class="call-now-box">
+                    <div class="call-now-title">Need help booking Spirit flights?</div>
+                    <div class="call-now-sub">Talk to our travel experts for best fares and support.</div>
+                    <div class="call-actions">
+                        <a href="tel:18007805923" class="call-number">1800-780-5923</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-plane">
+            <img src="img/airplane.png" alt="Spirit Plane">
+        </div>
+    </section>
+
+    <div class="flight-search-strip">
+        <div class="fs-inner">
+            <div class="fs-top">
+                <label class="fs-item">
+                    <input type="radio" name="trip" value="round">
+                    Round trip
+                </label>
+                <label class="fs-item">
+                    <input type="radio" name="trip" value="oneway" checked>
+                    Oneway
+                </label>
+            </div>
+            <div class="fs-bottom">
+                <div class="fs-field large">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Los Angeles(LAX), USA">
+                </div>
+                <div class="fs-field large">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Fort Lauderdale(FLL), USA">
+                </div>
+                <div class="fs-field small" id="departField">
+                    <i class="fa-solid fa-calendar"></i>
+                    <input type="date">
+                </div>
+                <div class="fs-field small" id="returnField">
+                    <i class="fa-solid fa-calendar"></i>
+                    <input type="date">
+                </div>
+                <div class="fs-field small">
+                    <i class="fa-solid fa-user"></i>
+                    <select>
+                        <option>1 Traveler</option>
+                        <option>2 Travelers</option>
+                    </select>
+                </div>
+                <div class="fs-field small">
+                    <select>
+                        <option>Economy</option>
+                        <option>Premium</option>
+                    </select>
+                </div>
+                <button class="fs-search-btn">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="fares-section">
+        <div class="fares-header">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 7L21 3l-4 10.5-11 4L3 9l7.5-2z"/></svg>
+            <h2 class="fares-title">Spirit Airlines Flight Deals</h2>
+        </div>
+        <p class="fares-sub">Cheapflightsfares brings you some not-to-be missed deals on airfares that are bound to enrich your travel experience. These deals are our latest and best we've found. Don't keep waiting. Book them now!</p>
+        <div class="fares-grid">
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">22 Jan 2026 - 24 Jan 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>LAX</div>
+                            <div class="deal-place">Los Angeles</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>LAS</div>
+                            <div class="deal-place">Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 54.61</div>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">28 Jan 2026 - 02 Feb 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>ATL</div>
+                            <div class="deal-place">Atlanta</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>FLL</div>
+                            <div class="deal-place">Fort Lauderdale</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 55.15</div>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">27 Jan 2026 - 03 Feb 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>CHI</div>
+                            <div class="deal-place">Chicago</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>FMY</div>
+                            <div class="deal-place">Fort Myers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 56.14</div>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">03 Feb 2026 - 11 Feb 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>TPA</div>
+                            <div class="deal-place">Tampa</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>FLL</div>
+                            <div class="deal-place">Fort Lauderdale</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 56.14</div>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">21 Jan 2026 - 24 Jan 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>PHL</div>
+                            <div class="deal-place">Philadelphia</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>FLL</div>
+                            <div class="deal-place">Fort Lauderdale</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 57.40</div>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">31 Jan 2026 - 03 Feb 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>DFW</div>
+                            <div class="deal-place">Dallas</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>LAS</div>
+                            <div class="deal-place">Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 57.89</div>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">07 Jan 2026 - 10 Jan 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>PIT</div>
+                            <div class="deal-place">Pittsburgh</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>FLL</div>
+                            <div class="deal-place">Fort Lauderdale</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 59.38</div>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">05 Feb 2026 - 07 Feb 2026</div>
+                    <div class="deal-route">
+                        <div>
+                            <div>SNA</div>
+                            <div class="deal-place">Santa Ana</div>
+                        </div>
+                        <div class="route-icon"></div>
+                        <div>
+                            <div>LAS</div>
+                            <div class="deal-place">Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-right">
+                    <div class="deal-type">RoundTrip</div>
+                    <div class="deal-price">$ 59.38</div>
+                </div>
+            </div>
+        </div>
+        <div class="fares-note">*Note: All fares are quoted in USD.</div>
+        <div class="fares-update">Last updated on Tuesday 12/02/2025 at 05:00 AM, the fares mentioned above are for flight tickets and inclusive of fuel surcharges, service fee and taxes. Based on historical data, these fares are subject to change without prior notice and cannot be guaranteed at the time of booking. Kindly go through our terms and conditions before booking.</div>
+    </section>
+
+    <div id="dealPopup" class="deal-popup-overlay" aria-hidden="true">
+        <div class="deal-popup-card" role="dialog" aria-modal="true">
+            <div class="deal-popup-header">
+                <div class="deal-popup-title">Flight Details</div>
+                <button class="deal-popup-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="deal-popup-image" id="dealPopupImg"></div>
+            <div class="deal-popup-body">
+                <div class="deal-popup-trip">
+                    <label><input type="radio" name="dealTrip" value="round" checked> Round trip</label>
+                    <label><input type="radio" name="dealTrip" value="oneway"> Oneway</label>
+                </div>
+                <div class="deal-popup-row">
+                    <div class="deal-popup-field"><i class="fa-solid fa-location-dot"></i><input id="dealFrom" type="text" placeholder="From"></div>
+                    <div class="deal-popup-field"><i class="fa-solid fa-location-dot"></i><input id="dealTo" type="text" placeholder="To"></div>
+                </div>
+                <div class="deal-popup-row">
+                    <div class="deal-popup-field"><i class="fa-solid fa-calendar"></i><input id="dealDepart" type="date"></div>
+                    <div class="deal-popup-field" id="dealReturnWrap"><i class="fa-solid fa-calendar"></i><input id="dealReturn" type="date"></div>
+                </div>
+                <div class="deal-popup-row">
+                    <div class="deal-popup-field"><i class="fa-solid fa-user"></i>
+                        <select id="dealTrav">
+                            <option>1 Traveler</option>
+                            <option>2 Travelers</option>
+                            <option>3 Travelers</option>
+                        </select>
+                    </div>
+                    <div class="deal-popup-field">
+                        <select id="dealCabin">
+                            <option>Economy</option>
+                            <option>Premium</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="deal-popup-search">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <h2 class="section-title">About Spirit Airlines (NK) Flights</h2>
+        <p class="section-text">Spirit Airlines operates as a low-carrier US airline. It has its headquarters in Dania Beach and serves around 83 destinations globally. Fort Lauderdale-Hollywood International Airport (FLL) is the major hub for Spirit Airlines. It is listed as the seventh largest passenger carrier in North America, operating regular flights to 615 airports worldwide. On average, the airline operates more than 700 daily flights. Spirit Airlines offers domestic and international connections to the Caribbean and Latin Spirit regions.</p>
+
+        <h3 class="section-subtitle">Classes of Service</h3>
+
+        <h4 class="section-subtitle">GO</h4>
+        <p class="section-text">Spirit Airlines offers GO as its economy seat with minimum airfare. The airline has set the lowest fare for those who need an affordable flight experience. Passengers here get checked bags and standard seat selection. In-flight amenities include Wi-Fi, snacks, and beverages. However, these amenities are not included in the air ticket fare.</p>
+
+        <h4 class="section-subtitle">Go Savvy</h4>
+        <p class="section-text">Go Savvy cabin seats come with an affordable price and a better onboard experience. Passengers get the choice to bring one carry-on bag or one checked bag. Standard seat selection is available while making reservations. Additional facilities such as snacks and Wi-Fi are not included.</p>
+
+        <h4 class="section-subtitle">Go Comfy</h4>
+        <p class="section-text">For extra comfort and ease, Go Comfy is the new seating option that offers business-class facilities to the passengers. It comes with extra amenities like snacks and drinks and benefits like priority check-in and boarding. Passengers get the option to choose a seat and carry one personal item and a carry-on bag. The first checked bag is free for Go Comfy passengers. You can expect better legroom and a blocked middle seat to add more comfort.</p>
+
+        <h4 class="section-subtitle">Go Big</h4>
+        <p class="section-text">Get the best in-flight experience with Go Big. With a big front seat, the airline offers a comforting journey. Passengers get spacious seating with extra legroom, additional seat cushioning, snacks and drinks that include alcoholic beverages, one carry-on bag, one checked bag, and priority check-in and boarding. For entertainment, there is WiFi available onboard.</p>
+
+        <h3 class="section-subtitle">Baggage Policy</h3>
+        <p class="section-text">Spirit Airlines allows passengers to carry one personal item that can fit under the seat or the overhead bins. The dimensions for personal items or bags are 18 x 14 x 8 inches.</p>
+        <p class="section-text">Passengers with Go Comfy and Go Big air tickets are allowed one carry-on (22 x 18 x 10 inches) and checked luggage (maximum of 62 linear inches and 50 pounds weight). Anything exceeding the limited number, weight, and dimensions will have an additional cost. Passengers flying with GO and Go Savvy seat tickets have to pay for checked baggage.</p>
+        <p class="section-text">Note that the airline does not allow luggage that exceeds 100 lb and measures more than 80 linear inches.</p>
+
+        <h3 class="section-subtitle">Web Check-in</h3>
+        <p class="section-text">Spirit Airlines allows passengers to save time with its web check-in service. Passengers can complete their check-in online from 24 hours up to 1 hour prior to flight departure. You can save travel time and avoid long queues at the airport with its web check-in feature. You can check in online through the official website or mobile app and get your boarding pass.</p>
+
+        <h3 class="section-subtitle">24/7 Post-Flight Booking Assistance</h3>
+        <p class="section-text">With our 24/7 Post-Flight Booking Assistance, you're never alone in managing your travel plans. Our dedicated travel experts are available around the clock to help with any adjustments you may need. Whether it's a change in your booking, canceling a flight, adding extra services, or updating passenger details, we've got you covered. If your plans change, our experts provide seamless support for flight cancellations and guide you through the Refund process, ensuring you understand every step and receive any eligible refund promptly. We prioritize flexibility in today's travel landscape, delivering quick, expert solutions tailored to your needs. Reach out anytime, and let us handle the details so you can enjoy your journey with peace of mind.</p>
+    </section>
+
+    <section class="airlines-section" aria-label="Other Popular Airlines">
+        <div class="airlines-header">
+            <h3 class="airlines-title">Other Popular Airlines</h3>
+            <div class="airline-nav">
+                <button class="airline-btn" id="air-prev" aria-label="Previous">‹</button>
+                <button class="airline-btn" id="air-next" aria-label="Next">›</button>
+            </div>
+        </div>
+        <div class="airlines-strip" id="air-strip">
+            <div class="airline-card">
+                <a href="united-airlines.html">
+                    <img class="airline-img" src="img/united-airlines-ua.jpg" alt="United Airlines">
+                    <div class="airline-name">United Airlines</div>
+                </a>
+            </div>
+            <div class="airline-card">
+                <a href="american-airlines.html">
+                    <img class="airline-img" src="img/american-airlines-aa.jpg" alt="American Airlines">
+                    <div class="airline-name">American Airlines</div>
+                </a>
+            </div>
+            <div class="airline-card">
+                <a href="lufthansa-airlines.html">
+                    <img class="airline-img" src="img/lufthansa-airlines-lh.jpg" alt="Lufthansa">
+                    <div class="airline-name">Lufthansa</div>
+                </a>
+            </div>
+            <div class="airline-card">
+                <a href="frontier-airlines.html">
+                    <img class="airline-img" src="img/frontier-airlines-f9.jpg" alt="Frontier Airlines">
+                    <div class="airline-name">Frontier Airlines</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="newsletter-section" aria-label="Newsletter">
+        <div class="newsletter-inner">
+            <div class="newsletter-top">
+                <div>
+                    <div class="newsletter-title">Subscribe to our Newsletter</div>
+                    <div class="newsletter-sub">Get latest offers from Desttino</div>
+                </div>
+                <form class="newsletter-form" action="#" method="post" aria-label="Newsletter form">
+                    <input type="email" class="newsletter-input" placeholder="Example@gmail.com" required>
+                    <select class="newsletter-select" aria-label="Country">
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                    </select>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="links-grid">
+                <div class="links-col">
+                    <div class="links-title">Quick Links</div>
+                    <a href="#">Popular Airlines</a>
+                    <a href="#">Popular Flight Routes</a>
+                    <a href="#">Top U.S. Destinations</a>
+                    <a href="#">Top International Destinations</a>
+                    <a href="#">Top Airports</a>
+                    <a href="#">Cruise</a>
+                </div>
+                <div class="links-col">
+                    <div class="links-title">Book</div>
+                    <a href="#">Cheap Flights</a>
+                    <a href="#">Cheap Hotels</a>
+                    <a href="#">Car Rentals</a>
+                    <a href="#">Group Travel</a>
+                </div>
+                <div class="links-col">
+                    <div class="links-title">Traveler Tools</div>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Online Check-in</a>
+                    <a href="#">Airline Baggage Fees</a>
+                    <a href="#">Travel Blog</a>
+                </div>
+                <div class="links-col">
+                    <div class="links-title">About</div>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+            </div>
+
+            <div class="social-row">
+                <div class="social-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="social-icon"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class="social-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="social-icon"><i class="fa-brands fa-pinterest-p"></i></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const strip=document.getElementById('air-strip');
+        const prev=document.getElementById('air-prev');
+        const next=document.getElementById('air-next');
+        function scrollByAmount(dir){if(!strip)return;strip.scrollBy({left:dir*300,behavior:'smooth'})}
+        prev&&prev.addEventListener('click',()=>scrollByAmount(-1));
+        next&&next.addEventListener('click',()=>scrollByAmount(1));
+
+        const round=document.querySelector('input[name="trip"][value="round"]');
+        const oneway=document.querySelector('input[name="trip"][value="oneway"]');
+        const returnField=document.getElementById('returnField');
+        function updateTrip(){if(!returnField)return;returnField.style.display=(round&&round.checked)?'flex':'none'}
+        round&&round.addEventListener('change',updateTrip);
+        oneway&&oneway.addEventListener('change',updateTrip);
+        updateTrip();
+
+        const popup=document.getElementById('dealPopup');
+        const popupCard=popup?popup.querySelector('.deal-popup-card'):null;
+        const popupClose=popup?popup.querySelector('.deal-popup-close'):null;
+        const popupImg=document.getElementById('dealPopupImg');
+        const dealFrom=document.getElementById('dealFrom');
+        const dealTo=document.getElementById('dealTo');
+        const dealDepart=document.getElementById('dealDepart');
+        const dealReturn=document.getElementById('dealReturn');
+        const dealReturnWrap=document.getElementById('dealReturnWrap');
+        const dealTripRound=popup?popup.querySelector('input[name="dealTrip"][value="round"]'):null;
+        const dealTripOne=popup?popup.querySelector('input[name="dealTrip"][value="oneway"]'):null;
+
+        function setPopupPosition(rect){if(!popupCard)return;const margin=10;let top=rect.top+margin;let left=rect.left+margin;const vw=window.innerWidth;const vh=window.innerHeight;const cardW=520;const cardH=340;left=Math.min(Math.max(margin,left),vw-cardW-margin);top=Math.min(Math.max(margin,top),vh-cardH-margin);popupCard.style.top=top+'px';popupCard.style.left=left+'px'}
+
+        function parseDate(str){const d=new Date(str);if(isNaN(d))return '';const iso=d.toISOString().slice(0,10);return iso}
+
+        function openDealPopup(card){try{if(!popup||!popupCard)return;const dates=card.querySelector('.deal-dates');const route=card.querySelector('.deal-route');const blocks=route?route.children:[];let fromCity='',toCity='';if(blocks&&blocks.length>=3){const fromBlock=blocks[0];const toBlock=blocks[2];const fromDiv=fromBlock.querySelector('div:first-child');const toDiv=toBlock.querySelector('div:first-child');fromCity=fromDiv?fromDiv.textContent.trim():'';toCity=toDiv?toDiv.textContent.trim():'';}
+            if(dealFrom)dealFrom.value=fromCity||'';if(dealTo)dealTo.value=toCity||'';if(dates){const parts=dates.textContent.split('-');if(parts.length===2){const dep=parseDate(parts[0].trim());const ret=parseDate(parts[1].trim());if(dep)dealDepart&&(dealDepart.value=dep);if(ret)dealReturn&&(dealReturn.value=ret);}}
+            const titleEl=popup.querySelector('.deal-popup-title');if(titleEl)titleEl.textContent=`Flight ${fromCity||''} To ${toCity||''}`.trim();
+            const typeEl=card.querySelector('.deal-type');const isRound=typeEl&&/round/i.test(typeEl.textContent);if(isRound){dealTripRound&&(dealTripRound.checked=true);dealReturnWrap&&(dealReturnWrap.style.display='flex');}else{dealTripOne&&(dealTripOne.checked=true);dealReturnWrap&&(dealReturnWrap.style.display='none');}
+            if(popupImg)popupImg.style.backgroundImage="url('img/spirit-airlines-nk.jpg')";
+            popup.style.display='block';setPopupPosition(card.getBoundingClientRect());
+            document.body.classList.add('no-scroll');
+        }catch(e){console&&console.error&&console.error('Deal popup error',e);}}
+
+        function closeDealPopup(){if(!popup)return;popup.style.display='none';document.body.classList.remove('no-scroll');}
+        popupClose&&popupClose.addEventListener('click',closeDealPopup);
+        popup&&popup.addEventListener('click',e=>{if(e.target===popup)closeDealPopup();});
+        const cards=document.querySelectorAll('.deal-card');cards.forEach(c=>c.addEventListener('click',()=>openDealPopup(c)));
+
+        function updateDealTrip(){if(!dealReturnWrap)return;dealReturnWrap.style.display=(dealTripRound&&dealTripRound.checked)?'flex':'none';}
+        dealTripRound&&dealTripRound.addEventListener('change',updateDealTrip);
+        dealTripOne&&dealTripOne.addEventListener('change',updateDealTrip);
+    </script>
+</body>
+</html>
