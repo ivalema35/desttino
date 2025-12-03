@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontier Airlines Flight Deals | Desttino</title>
+    <title>American Airlines Flight Deals | Desttino</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -54,8 +54,8 @@
         .content-section{max-width:1000px;margin:40px auto;padding:0 20px}
         .section-title{font-size:26px;font-weight:700;color:#111827;margin-bottom:10px}
         .section-subtitle{font-size:20px;font-weight:600;color:#1f2937;margin:16px 0 8px}
-        .section-text{color:#374151}
-        .bullet-list{margin:10px 0 0 18px;color:#374151}
+        .section-text{color:#374151;line-height:1.7}
+        .bullet-list{margin:10px 0 0 18px;color:#374151;line-height:1.8}
 
         .airlines-section{max-width:1200px;margin:30px auto;padding:0 20px}
         .airlines-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
@@ -67,7 +67,7 @@
         .airline-img{width:100%;height:140px;object-fit:cover;display:block}
         .airline-name{padding:12px;font-weight:600;color:#111827}
         .airline-nav{display:flex;gap:8px}
-        .airline-btn{border:1px solid #d1d5db;background:#fff;color:#374151;border-radius:999px;width:34px;height:34px;display:flex;align-items:center;justify-content:center}
+        .airline-btn{border:1px solid #d1d5db;background:#fff;color:#374151;border-radius:999px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer}
 
         .newsletter-section{background:#0a2540;color:#fff;margin-top:30px}
         .newsletter-inner{max-width:1200px;margin:auto;padding:24px 20px}
@@ -76,7 +76,7 @@
         .newsletter-sub{color:#cbd5e1}
         .newsletter-form{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
         .newsletter-input,.newsletter-select{padding:10px 12px;border-radius:8px;border:1px solid #cbd5e1;background:#fff;color:#111827}
-        .newsletter-btn{padding:10px 16px;border-radius:8px;background:#f97316;color:#fff;font-weight:700;border:none}
+        .newsletter-btn{padding:10px 16px;border-radius:8px;background:#f97316;color:#fff;font-weight:700;border:none;cursor:pointer}
         .links-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
         @media(max-width:900px){.links-grid{grid-template-columns:repeat(2,1fr)}}
         @media(max-width:600px){.links-grid{grid-template-columns:1fr}}
@@ -107,7 +107,6 @@
     background: linear-gradient(#3aa9ff, #cfeaff);
 }
 
-/* Sky Background + Clouds */
 .hero-bg-img {
     position: absolute;
     inset: 0;
@@ -115,7 +114,6 @@
     opacity: 0.35;
 }
 
-/* Content Flex Left + Right */
 .hero-content-wrapper {
     max-width: 1200px;
     margin: auto;
@@ -137,7 +135,6 @@
     color: #00396f;
 }
 
-/* Subscribe Box */
 .subscribe-box {
     background: #fff;
     padding: 22px;
@@ -168,14 +165,12 @@
     cursor: pointer;
 }
 
-/* Call Now Box inside Hero */
 .call-now-box{background:#fff;padding:22px;width:420px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.1);border-left:6px solid #0ca44a}
 .call-now-box .call-now-title{font-size:20px;font-weight:800;color:#0a3a2a}
 .call-now-box .call-now-sub{color:#374151;margin-top:6px}
 .call-now-box .call-actions{margin-top:12px}
 .call-now-box .call-number{color:#0a3a2a}
 
-/* Right Circle Offer */
 .circle-offer {
     width: 320px;
     height: 320px;
@@ -194,7 +189,6 @@
     font-size: 26px;
 }
 
-/* Plane Image */
 .hero-plane img {
     position: absolute;
     right: 22%;
@@ -202,7 +196,6 @@
     width: 520px;
 }
 
-/* Search Bar */
 .flight-search-bar {
     position: relative;
     margin-top: 60px;
@@ -222,6 +215,7 @@
     flex-direction: column;
     gap: 12px;
     color: white;
+    padding: 0 20px;
 }
 
 .fs-top{
@@ -237,7 +231,6 @@
     flex-wrap:wrap;
 }
 
-/* Trip Type Small Buttons */
 .fs-item {
     display: flex;
     align-items: center;
@@ -251,7 +244,6 @@
     color: white;
 }
 
-/* All Fields */
 .fs-field {
     display: flex;
     align-items: center;
@@ -282,7 +274,6 @@
     width: 150px;
 }
 
-/* Search Button */
 .fs-search-btn {
     background: #1e73f8;
     padding: 12px 22px;
@@ -382,9 +373,9 @@
 
     <div class="hero-content-wrapper">
         <div class="hero-left">
-            <h1 class="hero-title">Frontier Airlines Flight Booking</h1>
+            <h1 class="hero-title">American Airlines Flight Booking</h1>
             <div class="call-now-box">
-                <div class="call-now-title">Need help booking Frontier flights?</div>
+                <div class="call-now-title">Need help booking American Airlines flights?</div>
                 <div class="call-now-sub">Talk to our travel experts for best fares and support.</div>
                 <div class="call-actions">
                     <a href="tel:18007805923" class="call-number">1800-780-5923</a>
@@ -394,7 +385,7 @@
     </div>
 
     <div class="hero-plane">
-        <img src="img/airplane.png" alt="Frontier Plane">
+        <img src="img/airplane.png" alt="American Airlines Plane">
     </div>
 </section>
 <div class="flight-search-strip">
@@ -412,11 +403,11 @@
         <div class="fs-bottom">
             <div class="fs-field large">
                 <i class="fa-solid fa-location-dot"></i>
-                <input type="text" placeholder="Ahmedabad(AMD), India">
+                <input type="text" placeholder="New York (JFK), USA">
             </div>
             <div class="fs-field large">
                 <i class="fa-solid fa-location-dot"></i>
-                <input type="text" placeholder="Fort Lauderdale(FLL), USA">
+                <input type="text" placeholder="Los Angeles (LAX), USA">
             </div>
             <div class="fs-field small" id="departField">
                 <i class="fa-solid fa-calendar"></i>
@@ -437,6 +428,8 @@
                 <select>
                     <option>Economy</option>
                     <option>Premium</option>
+                    <option>Business</option>
+                    <option>First Class</option>
                 </select>
             </div>
             <button class="fs-search-btn">Search</button>
@@ -448,32 +441,10 @@
     <section class="fares-section">
         <div class="fares-header">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 7L21 3l-4 10.5-11 4L3 9l7.5-2z"/></svg>
-            <h2 class="fares-title">Frontier Airlines Flight Deals</h2>
+            <h2 class="fares-title">American Airlines Flight Deals</h2>
         </div>
-        <p class="fares-sub">Latest round-trip fares discovered. Book early to lock in savings.</p>
+        <p class="fares-sub">Cheapflightsfares brings you some not-to-be missed deals on airfares that are bound to enrich your travel experience. These deals are our latest and best we've found. Don't keep waiting. Book them now!</p>
         <div class="fares-grid">
-            <div class="deal-card">
-                <div class="deal-left">
-                    <div class="deal-dates">30 Jan 2026 - 04 Feb 2026</div>
-                    <div class="deal-route"><div>
-                        <div>ORL</div><div class="deal-place">Orlando</div></div>
-                        <div class="route-icon"></div>
-                        <div>
-                        <div>NYC</div><div class="deal-place">Newark Liberty</div></div></div>
-                </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 46.96</div></div>
-            </div>
-            <div class="deal-card">
-                <div class="deal-left">
-                    <div class="deal-dates">28 Jan 2026 - 11 Feb 2026</div>
-                    <div class="deal-route"><div>
-                        <div>CLE</div><div class="deal-place">Cleveland</div></div>
-                        <div class="route-icon"></div>
-                        <div>
-                        <div>ORL</div><div class="deal-place">Orlando</div></div></div>
-                </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 50.96</div></div>
-            </div>
             <div class="deal-card">
                 <div class="deal-left">
                     <div class="deal-dates">25 Jan 2026 - 30 Jan 2026</div>
@@ -483,66 +454,88 @@
                         <div>
                         <div>MIA</div><div class="deal-place">Miami</div></div></div>
                 </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 50.96</div></div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 69.47</div></div>
             </div>
             <div class="deal-card">
                 <div class="deal-left">
-                    <div class="deal-dates">25 Jan 2026 - 30 Jan 2026</div>
+                    <div class="deal-dates">17 Jan 2026 - 27 Jan 2026</div>
                     <div class="deal-route"><div>
-                        <div>WAS</div><div class="deal-place">Washington</div></div>
+                        <div>PHL</div><div class="deal-place">Philadelphia</div></div>
+                        <div class="route-icon"></div>
+                        <div>
+                        <div>FLL</div><div class="deal-place">Fort Lauderdale</div></div></div>
+                </div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 71.66</div></div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">17 Feb 2026 - 19 Feb 2026</div>
+                    <div class="deal-route"><div>
+                        <div>CHI</div><div class="deal-place">Chicago</div></div>
                         <div class="route-icon"></div>
                         <div>
                         <div>ORL</div><div class="deal-place">Orlando</div></div></div>
                 </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 50.96</div></div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 74.47</div></div>
             </div>
             <div class="deal-card">
                 <div class="deal-left">
-                    <div class="deal-dates">01 Feb 2026 - 11 Feb 2026</div>
+                    <div class="deal-dates">18 Jan 2026 - 23 Jan 2026</div>
                     <div class="deal-route"><div>
-                        <div>IND</div><div class="deal-place">Indianapolis</div></div>
+                        <div>LAS</div><div class="deal-place">Las Vegas</div></div>
                         <div class="route-icon"></div>
                         <div>
-                        <div>ORL</div><div class="deal-place">Orlando</div></div></div>
+                        <div>LAX</div><div class="deal-place">Los Angeles</div></div></div>
                 </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 50.96</div></div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 74.48</div></div>
             </div>
             <div class="deal-card">
                 <div class="deal-left">
-                    <div class="deal-dates">29 Jan 2026 - 01 Feb 2026</div>
+                    <div class="deal-dates">31 Jan 2026 - 02 Feb 2026</div>
                     <div class="deal-route"><div>
-                        <div>ORL</div><div class="deal-place">Orlando</div></div>
+                        <div>CHI</div><div class="deal-place">Chicago</div></div>
                         <div class="route-icon"></div>
                         <div>
-                        <div>MSY</div><div class="deal-place">New Orleans</div></div></div>
+                        <div>ATL</div><div class="deal-place">Atlanta</div></div></div>
                 </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 50.96</div></div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 79.46</div></div>
             </div>
             <div class="deal-card">
                 <div class="deal-left">
-                    <div class="deal-dates">03 Feb 2026 - 10 Feb 2026</div>
+                    <div class="deal-dates">04 Feb 2026 - 08 Feb 2026</div>
                     <div class="deal-route"><div>
-                        <div>NYC</div><div class="deal-place">New York</div></div>
+                        <div>CHI</div><div class="deal-place">Chicago</div></div>
                         <div class="route-icon"></div>
                         <div>
-                        <div>ORL</div><div class="deal-place">Orlando</div></div></div>
+                        <div>HOU</div><div class="deal-place">Houston</div></div></div>
                 </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 50.96</div></div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 79.47</div></div>
             </div>
             <div class="deal-card">
                 <div class="deal-left">
-                    <div class="deal-dates">02 Feb 2026 - 05 Feb 2026</div>
+                    <div class="deal-dates">14 Jan 2026 - 18 Jan 2026</div>
                     <div class="deal-route"><div>
-                        <div>SAT</div><div class="deal-place">San Antonio</div></div>
+                        <div>HOU</div><div class="deal-place">Houston</div></div>
                         <div class="route-icon"></div>
                         <div>
-                        <div>LAS</div><div class="deal-place">Las Vegas</div></div></div>
+                        <div>PHX</div><div class="deal-place">Phoenix</div></div></div>
                 </div>
-                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 50.96</div></div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 79.47</div></div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-left">
+                    <div class="deal-dates">17 Feb 2026 - 21 Feb 2026</div>
+                    <div class="deal-route"><div>
+                        <div>MIA</div><div class="deal-place">Miami</div></div>
+                        <div class="route-icon"></div>
+                        <div>
+                        <div>WAS</div><div class="deal-place">Washington</div></div></div>
+                </div>
+                <div class="deal-right"><div class="deal-type">RoundTrip</div><div class="deal-price">$ 79.47</div></div>
             </div>
         </div>
         <div class="fares-note">*Note: All fares are quoted in USD.</div>
-        <div class="fares-update">Last updated on Monday 12/01/2025 at 05:00 AM. Fares include taxes and fees and may change without notice. See terms and conditions before booking.</div>
+        <div class="fares-update">Last updated on Tuesday 12/02/2025 at 05:00 AM. the fares mentioned above are for Round Trip flight tickets and inclusive of fuel surcharges, service fee and taxes. Based on historical data, these fares are subject to change without prior notice and cannot be guaranteed at the time of booking. Kindly go through our terms and conditions before booking.</div>
     </section>
 
     <div id="dealPopup" class="deal-popup-overlay" aria-hidden="true">
@@ -577,6 +570,8 @@
                         <select id="dealCabin">
                             <option>Economy</option>
                             <option>Premium</option>
+                            <option>Business</option>
+                            <option>First Class</option>
                         </select>
                     </div>
                 </div>
@@ -585,30 +580,41 @@
         </div>
     </div>
 
-    <section class="content-section" id="frontier-content">
-        <h2 class="section-title">Exclusive Frontier Airlines (F9) Deals & Reservations</h2>
-        <p class="section-text">Frontier Airlines (F9), headquartered in Denver, Colorado, United States is a premier ULCC (Ultra Low-Cost Carrier) with major hubs in Atlanta, Chicago-Midway, Chicago-O’Hare, Cincinnati, Cleveland, Dallas/Fort Worth, Denver, Las Vegas, Miami, Orlando and more. This airline operates flights to over 120 destinations in the US, Caribbean, Mexico, and Central America with a fleet size of 150 aircraft. Frontier Airlines has partnered with programs such as Marriott Bonvoy, Wyndham Rewards, and Family Pooling allowing its members to earn flyer miles and share their FRONTIER Miles with family and friends.</p>
+    <section class="content-section" id="american-content">
+        <h2 class="section-title">Exclusive American Airlines Deals & Reservations</h2>
+        <p class="section-text">American Airlines (AA) is a major US carrier that serves more than 350 destinations in 48 countries. The headquarters is in Fort Worth, and the airline has set its operating hubs in Dallas/Fort Worth, Charlotte, Chicago O'Hare, Miami, and Philadelphia. American Airlines was founded in 1926, merging eighty small airlines. Later in 2013, it merged with US Airways. Today, it is one of the largest airlines in the world, operating 6,800 flights daily with a fleet of 900+ aircraft.</p>
+        
+        <p class="section-text" style="margin-top:12px">AA is a full service carrier providing all cabin classes, online check-in, paid baggage, frequent flyer program and a number of other services to the passengers. Do check these details here.</p>
 
         <h3 class="section-subtitle">Classes of Service</h3>
-        <h4 class="section-subtitle">Economy Class</h4>
-        <p class="section-text">Frontier Airlines operates with a single cabin class structure the economy class, allowing passengers to travel in a budget. The cabin class provides an option to enhance comfort with its standard economy seats and stretch seats. The standard seats are typical, featuring slimline design with minimal padding, offering about 28-29 inches of legroom and a width of around 18 inches. The stretch seats option offers more legroom around 36-38 inches of pitch and is located in front or exit rows of the aircraft.</p>
+        
+        <h4 class="section-subtitle">Basic Economy Class</h4>
+        <p class="section-text">Enjoy the lowest airfare with Basic Economy class. American Airlines features a basic economy cabin for a budget travel experience. Adding comfort to the journey, the cabin offers comfortable seating, free snacks, soft drinks, and inflight entertainment. The cabin ticket allows passengers to bring only one carry-on bag.</p>
 
-        <h3 class="section-subtitle">Onboard Amenities</h3>
-        <ul class="bullet-list">
-            <li>Food and beverages are offered on purchase to the passengers including alcohol, beer, snacks, and cocktails.</li>
-            <li>Passengers can add on stretch seats or bundle services for a better travel experience.</li>
-            <li>Onboard support for passengers with mobility challenges and special needs or for those traveling with children.</li>
-        </ul>
+        <h4 class="section-subtitle">Economy Class</h4>
+        <p class="section-text">American Airlines Economy class offers two seat sections: Main Cabin Extra and Main Cabin. With low airfare, the cabin class allows passengers to enjoy extra legroom and comfort. Main Cabin Extra offers services such as complimentary alcoholic drinks, early boarding, a free carry-on bag, complimentary beverages (alcoholic and non-alcoholic), snacks, Wi-fi, and entertainment. Main Cabin class offers free snacks and soft drinks, in-flight entertainment, and Wi-Fi.</p>
+
+        <h4 class="section-subtitle">Premium Economy</h4>
+        <p class="section-text">A premium economy airline ticket of AA promises extra comfort at an affordable price. The cabin offers wider seats with extra legroom, which makes the journey relaxing. You can enjoy priority check-in and boarding. The cabin class provides in-flight chef-inspired meal service with beverages that include alcoholic and nonalcoholic options. Coming to the amenities, passengers get headphones, bedding accessories, rotating skincare products, WiFi, USB, and other required facilities.</p>
+
+        <h4 class="section-subtitle">Business Class</h4>
+        <p class="section-text">American Airlines has three business-class options available on different routes. Depending on the distance and flight type, passengers can book a business cabin or a flagship business class. A business ticket is available for all shorter international flights from Bermuda, Canada, the Caribbean, Mexico, Puerto Rico, and other South American cities. Get priority check-in and boarding along with flagship lounge access. In-flight service includes premium dining, Wi-Fi, inflight entertainment and more.</p>
+        <p class="section-text" style="margin-top:12px">Flagship Business is for flights to and from Asia, Australia, Europe, New Zealand, South America, and transcontinental destinations. Passengers here get lie-flat seats, amenity kits, premium bedding, multi-course meals prepared by chefs, free entertainment, Wi-Fi, priority check-in, security and boarding, and flagship lounge access with flagship business tickets.</p>
+
+        <h4 class="section-subtitle">First Class</h4>
+        <p class="section-text">American Airlines first-class cabins are different for domestic flights and international flights. Domestic flights have first-class cabins; flagship first-class is available for international and transcontinental destinations. First-class cabins offer extra legroom, comfortable seats, and in-flight meals and beverages on short-haul flights. With flagship first class, passengers get priority check-in, security, and boarding facilities. Additional baggage allowance is also offered.</p>
 
         <h3 class="section-subtitle">Baggage Policy</h3>
-        <p class="section-text">Frontier Airlines allows its passengers to carry one personal item for free. The personal item should be able to fit under the space in the front seat and should not exceed 18 x14 x8 inches. Passengers can bring one carry-on bag and two checked baggage but these are not included in the fare, passengers will have to pay a fee at the time of booking or during the check-in within 24 hours. The carry-on bag should not exceed 24in x 16in x 10in and should be able to fit in an overhead bin or under the front seat. The checked baggage should not exceed 62 linear inches and 50 lbs weight. For extra baggage, passengers will have to pay a fee.</p>
+        <p class="section-text">According to American Airlines policy, passengers can carry one free carry-on bag and a personal item or bag. The airline provides standard weight and measurement that will not extend beyond 22 x 14 x 9 inches and includes handles and wheels. If you're carrying a personal item or a bag, then it has to fit under the seat.</p>
+        <p class="section-text" style="margin-top:12px">The baggage policy is based on destination and type of ticket or cabin class. A domestic flight ticket allows baggage weighing up to 50 pounds, and for passengers traveling by business or first-class ticket, it could go as high as 70 pounds. Premium economy, business, and first-class get up to three free check-in bags. Other than that, overweight and extra luggage are subject to additional costs.</p>
 
         <h3 class="section-subtitle">Web Check-in</h3>
-        <p class="section-text">Passengers traveling with Frontier Airlines can conveniently check-in online through their website or Frontier App. It is recommended to arrive at the airport at least two hours before departure. Make sure to check in and be at the gate before cutoff time which is 60 minutes for both domestic and international flights. If passengers are not carrying any luggage and have a mobile boarding pass, then they can skip the airport line and head straight to the gate.</p>
+        <p class="section-text">American Airlines has streamlined the boarding process for passengers with its web check-in facility. Using the mobile application or the official website, you can now complete the check-in process 24 to 1 hour before departure. No more rushing to the airport as you can easily check-in and get your boarding pass with American Airlines Web Check-in features.</p>
 
         <h3 class="section-subtitle">24/7 Post-Flight Booking Assistance</h3>
         <p class="section-text">With our 24/7 Post-Flight Booking Assistance, you're never alone in managing your travel plans. Our dedicated travel experts are available around the clock to help with any adjustments you may need. Whether it's a change in your booking, canceling a flight, adding extra services, or updating passenger details, we've got you covered. If your plans change, our experts provide seamless support for flight cancellations and guide you through the Refund process, ensuring you understand every step and receive any eligible refund promptly. We prioritize flexibility in today's travel landscape, delivering quick, expert solutions tailored to your needs. Reach out anytime, and let us handle the details so you can enjoy your journey with peace of mind.</p>
     </section>
+
     <section class="airlines-section" aria-label="Other Popular Airlines">
         <div class="airlines-header">
             <h3 class="airlines-title">Other Popular Airlines</h3>
@@ -625,9 +631,9 @@
                 </a>
             </div>
             <div class="airline-card">
-                <a href="american-airlines.html">
-                    <img class="airline-img" src="img/american-airlines-aa.jpg" alt="American Airlines">
-                    <div class="airline-name">American Airlines</div>
+                <a href="frontier-airlines.html">
+                    <img class="airline-img" src="img/frontier-airlines-f9.jpg" alt="Frontier Airlines">
+                    <div class="airline-name">Frontier Airlines</div>
                 </a>
             </div>
             <div class="airline-card">
@@ -637,9 +643,9 @@
                 </a>
             </div>
             <div class="airline-card">
-                <a href="frontier-airlines.html">
-                    <img class="airline-img" src="img/frontier-airlines-f9.jpg" alt="Frontier Airlines">
-                    <div class="airline-name">Frontier Airlines</div>
+                <a href="american-airlines.html">
+                    <img class="airline-img" src="img/american-airlines-aa.jpg" alt="American Airlines">
+                    <div class="airline-name">American Airlines</div>
                 </a>
             </div>
         </div>
@@ -706,7 +712,6 @@
     </footer>
     
 
-    <script src="../script.js"></script>
     <script>
         const strip=document.getElementById('air-strip');
         const prev=document.getElementById('air-prev');
@@ -740,7 +745,7 @@
             if(dealFrom)dealFrom.value=fromCity||'';if(dealTo)dealTo.value=toCity||'';if(dates){const parts=dates.textContent.split('-');if(parts.length===2){const dep=parseDate(parts[0].trim());const ret=parseDate(parts[1].trim());if(dep)dealDepart&&(dealDepart.value=dep);if(ret)dealReturn&&(dealReturn.value=ret)}}
             const titleEl=popup.querySelector('.deal-popup-title');if(titleEl)titleEl.textContent=`Flight ${fromCity||''} To ${toCity||''}`.trim();
             const typeEl=card.querySelector('.deal-type');const isRound=typeEl&&/round/i.test(typeEl.textContent);if(isRound){dealTripRound&&(dealTripRound.checked=true);dealReturnWrap&&(dealReturnWrap.style.display='flex')}else{dealTripOne&&(dealTripOne.checked=true);dealReturnWrap&&(dealReturnWrap.style.display='none')}
-            if(popupImg)popupImg.style.backgroundImage="url('img/frontier-airlines-f9.jpg')";
+            if(popupImg)popupImg.style.backgroundImage="url('img/american-airlines-aa.jpg')";
             popup.style.display='block';setPopupPosition(card.getBoundingClientRect());
             document.body.classList.add('no-scroll');
         }catch(e){console&&console.error&&console.error('Deal popup error',e)}}
